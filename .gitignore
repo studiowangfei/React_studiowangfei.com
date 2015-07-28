@@ -12,3 +12,6 @@ node_modules/
 
 # image
 public/img/
+
+# JSX transformer
+public/js/.module-cache
