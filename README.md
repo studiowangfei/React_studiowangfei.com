@@ -29,6 +29,6 @@ Component Type & Structure:
       - MapContainer (optional)
       - VideoContainer (optional)
       - GraphContainer (optional)
-      - WildCardContainer (optional)
+      - AppContainer (optional)
     - FooterContainer
 
