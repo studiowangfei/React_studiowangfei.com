@@ -6,6 +6,7 @@ All data is JSON-based and linked with components.
 
 - Component Type: header, footer, project title, brief, image, slideshow, blog, map, video, etc.
 
+
 - Structure:
 
   - SectionComponent (home, project, about, blog, contact, etc.)
@@ -17,7 +18,7 @@ All data is JSON-based and linked with components.
       - ImageContainer
       - BlogContainer
     - FooterContainer
-    
+
   - ProjectComponent (each project)  
     - HeaderContainer
     - ProjectContainer
