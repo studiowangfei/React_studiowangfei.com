@@ -1,0 +1,14 @@
+var blogData = [
+  {
+  "title": "Rural Agency",
+  "date": "2013.02",
+  "projectUrl": "taobao_2.html",
+  "imgNum": 3,
+  "imgUrl": "../img/project/taobao_2/",
+  "scrollDownValue": 800,
+  "content": "Another Taobao Village is a collaborative effort between Fei Wang and Alibaba AliResearch. It's trying to re-tell the story of Taobao.com - initiated by Alibaba Group in 2003 and now the largest e-commerce platform in the world - with a fresh perspective and play-able format. Since 2006, Taobao villages began to emerge across China. More and more rural residents use Taobao e-commerce platform to do business and the economic landscape of rural China is shifting. By 2014, 21% of Taobao online store owners are living in rural areas and there are over 200 Taobao villages around the country.",
+  "scrollDown": " to see Taobao village transaction map and 11.11 e-commerce fest map."
+  }
+];
+
+
