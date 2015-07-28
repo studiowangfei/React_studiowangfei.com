@@ -5,9 +5,9 @@ A customizable framework built with web-component, handling both standard and cu
 All data is JSON-based and linked with components.
 
 Component Type & Structure:
-  // MetaComponent (header, footer, project title, brief, image, slideshow, blog, map, video, etc.)
-  // SectionComponent (home, project, about, blog, contact, etc.)
-  // ProjectComponent (project page)
+  MetaComponent (header, footer, project title, brief, image, slideshow, blog, map, video, etc.)
+  SectionComponent (home, project, about, blog, contact, etc.)
+  ProjectComponent (project page)
     
   - SectionComponent
     - HeaderContainer
