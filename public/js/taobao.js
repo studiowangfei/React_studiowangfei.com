@@ -121,7 +121,7 @@ $(document).ready(function(){
     $('body, html').animate({ scrollTop: 1600 }, 'slow');
   });
 
-  /* poker sort move top when hover */
+  // poker sort move top when hover
   function move(x, y){
     return function(){
       $('.movetop').css('transition', 'top 0s, left 0s');
@@ -267,12 +267,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var taobao_poker_height = $('.taobao_poker').height();
-    if(scrollHeight>480 && scrollHeight<800+taobao_poker_height){
+    if(scrollHeight>960 && scrollHeight<1240+taobao_poker_height){
       $('.taobao_trigger_1').fadeIn('slow');
     }else{
       $('.taobao_trigger_1').fadeOut('slow');
     };
-    if(scrollHeight>1000+taobao_poker_height){
+    if(scrollHeight>1240+taobao_poker_height){
       $('.taobao_trigger_2').fadeIn('slow');
     }else{
       $('.taobao_trigger_2').fadeOut('slow');

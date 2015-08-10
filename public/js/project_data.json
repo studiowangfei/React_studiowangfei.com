@@ -1,16 +1,43 @@
 var projectData = [
   {
-  "name": "studiowangfei.com",
+  "name": "Mylio Pair",
+  "year": 2015,
+  "type": "application",
+  "projectUrl": "mylio.html",
+  "imgNum": 3,
+  "imgUrl": "../img/project/mylio/",
+  "scrollDownValue": 980,
+  "relatedLinks": [
+    {"website": " - Mylio", "weblink": "http://www.mylio.com"}],
+  "story": "Mylio is the next-generation photo management tool that organizes, edits and syncs your photos across all devices. It provides multiple metrics sorting photos automatically based on date, rating, size etc. One user problem of automatic sorting is that the computer can not time-sequence photos without enough or correct data. When you import a scanned photo taken in 1995, the computer probably recognizes its date as 2015 because that is the EXIF info your scanner generates. Mylio Pair is a new feature that helps you to time-sequence all of your old photos correctly, efficiently and enjoyably. Sorting should not be a task, it's a game.",
+  "scrollDown": " to see how it works and play with the mock-up."
+  },
+  {
+  "name": "SOM BIM Data Dashboard",
+  "year": 2014,
+  "type": "application",
+  "projectUrl": "sombim.html",
+  "imgNum": 2,
+  "imgUrl": "../img/project/sombim/",
+  "scrollDownValue": 980,
+  "relatedLinks": [
+    {"website": " - SOM LLP.", "weblink": "http://www.som.com"}],
+  "story": "SOM BIM Data is a web-based dashboard for managing complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Rather than showcasing static project information like traditional CMS, SOM BIM Data is focusing on data and it's envisioned and designed as a collaborating platform for all players in one building project.",
+  "scrollDown": " to see its UI framework and data visualization"
+  },
+  {
+  "name": "Studiowangfei.com v1.0",
   "year": 2015,
   "type": "website framework",
-  "projectUrl": "website.html",
-  "imgNum": 5,
-  "imgUrl": "../img/project/website/",
-  "scrollDownValue": 800,
+  "projectUrl": "webframe.html",
+  "imgNum": 2,
+  "imgUrl": "../img/project/webframe/",
+  "scrollDownValue": 980,
   "relatedLinks": [
-    {"website": " - studiowangfei.com", "weblink": "http://www.studiowangfei.com"}],
-  "story": "Adopting but re-thinking the current web-component technology, studiowangfei.com is designed and built with a ReactJS framework that satisfies needs for scale up and customization.",
-  "scrollDown": " to see reusable and customizable component structure."
+    {"website": " - studiowangfei.com", "weblink": "http://www.studiowangfei.com"},
+    {"website": " - dev code on Github", "weblink": "https://github.com/studiowangfei/React_studiowangfei.com"}],
+  "story": "Studiowangfei.com is my personal website and showcases design and research projects. I designed and built it from scratch with the concept of web-components. By tweaking the typologies of components, studiowangfei.com v1.0 was designed as a flexible framework that accomodates both standardization and customization. All project data is seperated as a JSON feed and hooked back with web-components. What you see here is the framework of the first release of this site, by now it probably has evolved.",
+  "scrollDown": " to see the information architecture, UI framework and component typologies of this site."
   },
   {
   "name": "Another Taobao Village 2",
@@ -19,7 +46,7 @@ var projectData = [
   "projectUrl": "taobao_2.html",
   "imgNum": 3,
   "imgUrl": "../img/project/taobao_2/",
-  "scrollDownValue": 800,
+  "scrollDownValue": 960,
   "relatedLinks": [
     {"website": " - Alibaba AliResearch", "weblink": "http://www.aliresearch.com"},
     {"website": " - Taobao.com", "weblink": "http://www.taobao.com"}],
@@ -33,11 +60,11 @@ var projectData = [
   "projectUrl": "nycsub.html",
   "imgNum": 11,
   "imgUrl": "../img/project/nycsub/",
-  "scrollDownValue": 750,
+  "scrollDownValue": 980,
   "relatedLinks": [
     {"website": " - MTA New York City", "weblink": "http://web.mta.info/nyct/facts/ridership/"},
   ],
-  "story": "Most of time data visualization targets on the crowd as a whole, which leaves personal touch behind. NYC Sub Rider-Readers tries to bridge the data of \"whole\" and the data of \"one\". The project is comprised of two parts: one is the visualization of weekday, weekend and annual riderships of every New York subway stations, which represents the movement of subway riders across the city; the other is tracking subway readers - who constitute a fairly amount of daily commuters - and generating personal travelling maps of their reading behaviors. Using digital data collected by ticket checking machine and physical mapping rendered by photographs and drawings, the project delivers an image of contemporary moving and reading in metropolis.",
+  "story": "Most of time data visualization targets on the crowd as a whole, which leaves personal touch behind. NYC Sub Rider-Readers tries to bridge the data of \"whole\" and the data of \"one\". Using digital data collected by ticket checking machine and physical mapping rendered by photographs and drawings, the project delivers an image of contemporary moving and reading in metropolis.",
   "scrollDown": " to play with the interactive maps."
   },
   {
@@ -66,7 +93,7 @@ var projectData = [
   "relatedLinks": [
     {"website": " - Alibaba AliResearch", "weblink": "http://www.aliresearch.com"},
     {"website": " - Taobao.com", "weblink": "http://www.taobao.com"}],
-  "story": "Another Taobao Village is a collaborative effort bewtween Fei Wang and AliResearch. It's trying to re-tell the story of Taobao.com - initiated by Alibaba Group in 2003 and now the largest e-commerce platform in the world - with a fresh perspective and play-able format. Since 2006, Taobao villages began to emerge across China. More and more rural residents use Taobao e-commerce platform to do business and the economic landscape of rural China is shifting. By 2014, 21% of Taobao online store owners are living in rural areas and there are over 200 Taobao villages around the country. Taking this thread, the project abandons the traditional way of visualizing Taobao's explosive growth within the industry, and chooses to situate it in a broader context: How can we understand Taobao's success along with the transformation of China? The project designs a game-setting comprised of two sets of pokers, which represent the power of Top-down and Bottom-up respectively. Four players - Government, Alibaba, Taobao store owners, Consumers - are imagined as the participants of this game. All data, stories, policies, case studies and other intriguing things are merged into the game. The project uses this game-setting to re-envision Taobao's social impact: playing pokers always means wins and loses, but can Taobao.com become a game without losers?",
+  "story": "Another Taobao Village is a collaborative effort between Fei Wang and Alibaba AliResearch. It's trying to re-tell the story of Taobao.com - initiated by Alibaba Group in 2003 and now the largest e-commerce platform in the world - with a fresh perspective and play-able format. Since 2006, Taobao villages began to emerge across China. More and more rural residents use Taobao e-commerce platform to do business and the economic landscape of rural China is shifting.",
   "scrollDown": " to play with the poker game sets."
   },
   {
@@ -108,7 +135,7 @@ var projectData = [
     {"website": " - Power Station of Art", "weblink": "http://powerstationofart.com/"},
     {"website": " - Princeton SoA", "weblink": "https://soa.princeton.edu/#830"},
   ],
-  "story": "Initiated by Power Station of Art in Shanghai, Another Leap is an exhibition showcasing interactive artworks in both physical and digital forms. As a collective response to the digital shift of our society, the exhibition invites artists, makers, engineers, designers, data scientists and entrepreneurs to deliver projects inspired by emerging social and technological phenomena such as big data, maker culture, freelancing, e-commerce, we-media, robotics, labor migration, etc. Another Leap presents fifteen art pieces that range from social media action art to interactive robotic installations, and it's on show from Oct. 28th of 2014 to Mar. 8th of 2015 at Power Station of Art in Shanghai. Another Leap is co-curated by Fei Wang and Hong Pu, and the participants include: Xiaoji Chen, Rob MacKinnon, Kan Jia, Zhen Liu, Binyuan Li, Link, Shituzi, Another Inc., Liao Li, Hao Ruan, LYCS Architecture, Wei Wang, Harry Wei, Han Dong, Willem Boning, Xing Yan, AliResearch, Ying Yu. Visit the show at: Power Station of Art, Huayuangang Road 200, Shanghai 200011.",
+  "story": "Initiated by Power Station of Art in Shanghai, Another Leap is an exhibition showcasing interactive artworks in both physical and digital forms. Another Leap presents fifteen art pieces that range from social media action art to interactive robotic installations, and it's on show from Oct. 28th of 2014 to Mar. 8th of 2015 at Power Station of Art in Shanghai. Another Leap is co-curated by Fei Wang and Hong Pu, and the participants include: Xiaoji Chen, Rob MacKinnon, Kan Jia, Zhen Liu, Binyuan Li, Link, Shituzi, Another Inc., Liao Li, Hao Ruan, LYCS Architecture, Wei Wang, Harry Wei, Han Dong, Willem Boning, Xing Yan, AliResearch, Ying Yu.",
   "scrollDown": " to read the exhibition manifesto and browse artworks."
   },
   {

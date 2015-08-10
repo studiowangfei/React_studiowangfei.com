@@ -1,5 +1,10 @@
+// do NOT write comment like"// xxxxxxxx" in JSX syntax, it cannot be parsed or skipped
+
 ////////////////// project index setting
 var projectList = [
+  "Mylio Pair",
+  "SOM BIM Data Dashboard",
+  "Studiowangfei.com v1.0",
   "Another Taobao Village 2",
   "New York City Sub Rider-Readers",
   "Inside x Insight",
@@ -48,30 +53,6 @@ var previousProject = function(){
    -BottomContainer */
 /* -ProjectSlideContainer */
 
-var TopContainer = React.createClass({
-  render: function(){
-    return (
-      <div>
-        <div className="top-placeholder">
-        </div>
-        <div className="top-container">
-          <div className="top-section">
-            <div className="left">
-              <a id="logo" href="http://www.studiowangfei.com/">Studiowangfei</a>
-            </div>
-            <div>
-              //to make React-constructed element perfectly match html-constructed element spacing, add " " before each section name
-              <a className="item" id="current" href="../project.html"> Project</a>
-              <a className="item" href="../about.html"> About</a>
-              <a className="item" href="../blog.html"> Blog</a>
-              <a className="item" href="../contact.html"> Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-});
 
 var ProjectTitleContainer = React.createClass({
   render: function(){
@@ -110,6 +91,7 @@ var ProjectContainer = React.createClass({
     return (
       <div>
         <div className="project_container">
+
           <div className="project_brief">
             {projectData[projectID].story}
             <br></br><br></br>
@@ -117,6 +99,7 @@ var ProjectContainer = React.createClass({
             <br></br>
             <span className="bold" id="scroll"> Scroll down</span> {projectData[projectID].scrollDown}
           </div>
+
           <div className="project_img">
           </div>
         </div>
@@ -172,11 +155,6 @@ var ProjectSlideContainer = React.createClass({
 });
 
 React.render(
-  <TopContainer />,
-  document.getElementById('topContainer')
-);
-
-React.render(
   <ProjectTitleContainer />,
   document.getElementById('projectTitleContainer')
 );
@@ -196,11 +174,9 @@ React.render(
   document.getElementById('projectSlideContainer')
 );
 
-////////////// jQuery control
+/////////////////// jQuery controller for all projects //////////////
+
 $(document).ready(function(){
-  $(window).on('beforeunload', function(){
-    $(window).scrollTop(0);
-  });
 
   // hide scroll when the project doesn't need it
   if(projectData[projectID].scrollDown === null){
@@ -209,50 +185,62 @@ $(document).ready(function(){
     $('#scroll').css('display', 'initial');
   }
 
+  // scroll down certain value when click
   $('#scroll').click(function(){
     $('body, html').animate({ scrollTop: projectData[projectID].scrollDownValue }, 800);
   });
 
-  // top section responsive to scroll up and down
-  $(window).scroll(function(){
-    $('.top-container').css('background-color', 'black')
-    .css('border-bottom', 'none');
-    $('#logo').css('color', 'white');
-    $('#current').css('color', 'white');
-    $('.item').hover(function(){
-      $(this).css('color', 'white');
-    }, function(){
-      $(this).css('color', '#888888');
-      $('#current').css('color', 'white');
-    });
-    var topMargin = $(window).scrollTop();
-    if (topMargin === 0){
-      $('.top-container').css('background-color', 'white')
-      .css('border-bottom', '1px solid #e3e3e3');
-      $('#current').css('color', 'black');
-      $('#logo').css('color', 'black');
-      $('.item').hover(function(){
-        $(this).css('color', 'black');
-      }, function(){
-        $(this).css('color', '#888888');
-        $('#current').css('color', 'black');
-      });
-    }
-  });
-
-  //slideshow image append
+  // slideshow image append
   var img_number = projectData[projectID].imgNum;
 
   for(var x=0;x<img_number;x++){
     $('.project_img').append(
-      '<img id="project_small_' + x + '" src="' + projectData[projectID].imgUrl + x +'_small.jpg"/>'
+      '<img id="project_small_' + x + '" src="' + projectData[projectID].imgUrl + x +'_big.jpg"/>'
     );
     $('.project_slide_img').append(
       '<img id="project_big_' + x + '" src="' + projectData[projectID].imgUrl + x +'_big.jpg"/>'
     );
   }
 
-  //project slideshow (automatic on page top-right)
+  // project image and brief text change layout according to window width
+  function projectImageLayout(){
+    var containerWidth = $('.feature_container').width();
+    if (containerWidth >= 920){
+      $('.project_img')
+      .css('width', '58%')
+      .css('margin', '0 auto')
+      .css('height', '560px');
+
+      $('.project_title')
+      .css('text-align', 'left');
+
+      $('.project_brief')
+      .css('width', '35%')
+      .css('margin-right', '7%')
+      .css('text-align', 'left');
+    }else{
+      $('.project_img')
+      .css('width', containerWidth*0.9 + 'px')
+      .css('margin', '0 auto')
+      .css('height', '720px');
+
+      $('.project_title')
+      .css('text-align', 'center');
+
+      $('.project_brief')
+      .css('text-align', 'center')
+      .css('width', containerWidth*0.75 + 'px')
+      .css('margin', '0 auto 64px auto');
+    }
+  }
+
+  projectImageLayout();
+
+  $(window).resize(function(){
+    projectImageLayout()
+  });
+
+  // project slideshow (automatic on page top-right)
   $(".project_img > img:gt(0)").hide();
 
   function slideSwitch(){
@@ -299,6 +287,7 @@ $(document).ready(function(){
     slide_resize();
   });
 
+  // slideshow show up and show in sequence
   var slideshowIndex = 0;
   function project_slideshow(id){
     return function(){
@@ -343,7 +332,7 @@ $(document).ready(function(){
   $('#project_arrow_right').click(project_slide_next);
   $('.project_slide_img img').click(project_slide_next);
 
-  // escape key setting, keycode '27', cover all project close functions
+  // escape key setting, keycode '27', only for standard project components
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
       $('body, html').css('overflow', 'auto');
@@ -351,9 +340,10 @@ $(document).ready(function(){
     }
   });
 
-  // close button setting, cover all project close functions
+  // close button setting, only for standard project components
   $('.project_close').click(function(){
     $('body, html').css('overflow', 'auto');
     $('.project_slide_container').hide();
   });
+
 });

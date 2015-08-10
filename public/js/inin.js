@@ -4,7 +4,11 @@ $(document).ready(function(){
 
   // wechat QR code click and show
   $('#wechat').click(function(){
-    $('#wechatCode').fadeToggle('fast');
+    if($('#wechatCode').css('opacity') == 0){
+      $('#wechatCode').css('opacity', '1');
+    }else{
+      $('#wechatCode').css('opacity', '0');
+    }
   });
 });
 

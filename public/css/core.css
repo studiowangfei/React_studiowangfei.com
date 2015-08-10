@@ -117,6 +117,9 @@ html, body {
   overflow: auto;
 }
 
+.page_type {
+  display: none;
+}
 
 /* line 26, ../../sass/index.scss */
 .main-container {
@@ -128,6 +131,7 @@ html, body {
   -ms-flex-direction: column;
   position: relative;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 /* line 35, ../../sass/index.scss */
@@ -146,8 +150,8 @@ html, body {
 /* line 43, ../../sass/index.scss */
 .top-placeholder {
   position: relative;
-  height: 36px;
-  margin-bottom: 72px;
+  height: 32px;
+  margin-bottom: 96px;
 }
 
 .top-container{
@@ -159,9 +163,9 @@ html, body {
   -webkit-box-sizing: border-box;
   top: 0;
   z-index: 3;
-  opacity: 0.85;
+  opacity: 0.98;
   transition: all 0.5s;
-  border-bottom: 1px solid #e3e3e3;
+  -webkit-transition: all 0.5s;
 }
 
 .top-section {
@@ -174,16 +178,16 @@ html, body {
   margin: 0 auto;
   max-width: 960px;
   min-width: 480px;
-  padding: 12px 0;
-  font-size: 14px;
-  font-weight: 400;
+  padding: 21px 0;
+  font-size: 12px;
+  font-weight: 500;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  //text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .top-section div a, .top-section div a:visited{
-  color: #888888;
+  color: #a3a3a3;
 }
 
 .top-section div a:hover{
@@ -194,8 +198,8 @@ html, body {
   -webkit-flex: 1;
   flex: 1;
   -ms-flex: 1;
-  text-transform: lowercase;
-  font-size: 16px;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 500;
 }
 

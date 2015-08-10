@@ -31,7 +31,6 @@ $(document).ready(function(){
 
   // resize all related items when window changes
   $(window).resize(function(){
-    slide_resize();
     playItemControl();
     map_resize();
   });

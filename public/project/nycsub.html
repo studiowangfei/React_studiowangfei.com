@@ -19,9 +19,21 @@
 
         <!--customized part-->
         <div class="feature_container">
-          <div class="nycsub" ontouchstart: "this.classList.toggle('hover');">
+          <div class="feature_title">
+            Read in move, data-micro.
           </div>
-          <div id="nycsub_map-canvas" ontouchstart: "this.classList.toggle('hover');">
+          <div class="feature_descript">
+            The project is comprised of two parts to represent data-micro and data-macro respectively. Data-micro is a public survey tracking subway readers - who constitute a fairly amount of daily commuters - and generating personal travelling maps and stories of their reading behaviors.
+          </div>
+          <div class="nycsub">
+          </div>
+          <div class="feature_title">
+            Ridership mapped, data-macro.
+          <div class="feature_descript">
+            The second part is a map-based visualization of weekday, weekend and annual riderships of every New York subway stations, which represents the movement of subway riders as a whole across New York city.
+          </div>
+          </div>
+          <div id="nycsub_map-canvas">
           </div>
           <div class="nycsub_map_scale">
             <div class="nycsub_map_scale_year"></div>
@@ -93,9 +105,9 @@
     </div>
     <!--customized part ends-->
 
-    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
     <script src="../js/project_data.json"></script>
-    <script type="text/jsx" src="../js/project_framework.js"></script>
+    <script src="../js/core_framework.js"></script>
+    <script src="../js/project_framework.js"></script>
     <script src="../js/nycsub_data.json"></script>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj-qZOU9FxF-Xj7imTNeFaRDOA8vk7Q_8"></script>

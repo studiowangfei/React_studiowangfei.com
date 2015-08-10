@@ -10,7 +10,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var nycsub_flipper_height = $('.nycsub').height();
-    if(scrollHeight>640 && scrollHeight<400+nycsub_flipper_height){
+    if(scrollHeight>870 && scrollHeight<720+nycsub_flipper_height){
       $('.nycsub_lines').fadeIn('slow');
     }else{
       $('.nycsub_lines').fadeOut('slow');
@@ -136,7 +136,7 @@ $(document).ready(function(){
   $('#nycsub_down').click(function(){
     var fullHeight = $('.outer-container').height();
     var mapHeight = $('#nycsub_map-canvas').height();
-    $('body, html').animate({ scrollTop: fullHeight-mapHeight-240 }, 'slow');
+    $('body, html').animate({ scrollTop: fullHeight-mapHeight-360}, 'slow');
   });
 
   //map fullscreen and exit

@@ -1,6 +1,10 @@
+// do NOT write comment like"// xxxxxxxx" in JSX syntax, it cannot be parsed or skipped
+
 ////////////////// project index setting
 var projectList = [
-  "studiowangfei.com",
+  "Mylio Pair",
+  "SOM BIM Data Dashboard",
+  "Studiowangfei.com v1.0",
   "Another Taobao Village 2",
   "New York City Sub Rider-Readers",
   "Inside x Insight",
@@ -47,36 +51,14 @@ var previousProject = function(){
    -ProjectContainer
     -Link
    -BottomContainer */
+/* -ProjectSlideContainer */
 
-var TopContainer = React.createClass({displayName: "TopContainer",
-  render: function(){
-    return (
-      React.createElement("div", null,
-        React.createElement("div", {className: "top-placeholder"}
-        ),
-        React.createElement("div", {className: "top-container"},
-          React.createElement("div", {className: "top-section"},
-            React.createElement("div", {className: "left"},
-              React.createElement("a", {id: "logo", href: "http://www.studiowangfei.com/"}, "Studiowangfei")
-            ),
-            React.createElement("div", null,
-              React.createElement("a", {className: "item", id: "current", href: "../project.html"}, " Project"),
-              React.createElement("a", {className: "item", href: "../about.html"}, " About"),
-              React.createElement("a", {className: "item", href: "../blog.html"}, " Blog"),
-              React.createElement("a", {className: "item", href: "../contact.html"}, " Contact")
-            )
-          )
-        )
-      )
-    );
-  }
-});
 
 var ProjectTitleContainer = React.createClass({displayName: "ProjectTitleContainer",
   render: function(){
     return (
-      React.createElement("div", null,
-        React.createElement("div", {className: "project_title"},
+      React.createElement("div", null, 
+        React.createElement("div", {className: "project_title"}, 
           projectData[projectID].name
         )
       )
@@ -87,8 +69,8 @@ var ProjectTitleContainer = React.createClass({displayName: "ProjectTitleContain
 var Link = React.createClass({displayName: "Link",
   render: function(){
     return (
-      React.createElement("div", null,
-        React.createElement("a", {id: "linkNodes", href: this.props.weblink},
+      React.createElement("div", null, 
+        React.createElement("a", {id: "linkNodes", href: this.props.weblink}, 
           this.props.website
         )
       )
@@ -107,15 +89,17 @@ var ProjectContainer = React.createClass({displayName: "ProjectContainer",
       });
     }
     return (
-      React.createElement("div", null,
-        React.createElement("div", {className: "project_container"},
-          React.createElement("div", {className: "project_brief"},
-            projectData[projectID].story,
-            React.createElement("br", null), React.createElement("br", null),
-            linkNodes,
-            React.createElement("br", null),
+      React.createElement("div", null, 
+        React.createElement("div", {className: "project_container"}, 
+
+          React.createElement("div", {className: "project_brief"}, 
+            projectData[projectID].story, 
+            React.createElement("br", null), React.createElement("br", null), 
+            linkNodes, 
+            React.createElement("br", null), 
             React.createElement("span", {className: "bold", id: "scroll"}, " Scroll down"), " ", projectData[projectID].scrollDown
-          ),
+          ), 
+
           React.createElement("div", {className: "project_img"}
           )
         )
@@ -127,19 +111,19 @@ var ProjectContainer = React.createClass({displayName: "ProjectContainer",
 var BottomContainer = React.createClass({displayName: "BottomContainer",
   render: function(){
     return (
-      React.createElement("div", null,
-        React.createElement("div", {className: "bottom-section"},
-          React.createElement("div", {className: "back_project"},
+      React.createElement("div", null, 
+        React.createElement("div", {className: "bottom-section"}, 
+          React.createElement("div", {className: "back_project"}, 
             React.createElement("a", {href: "../project.html"}, "Back")
-          ),
-          React.createElement("div", {className: "prev_next_project"},
-            React.createElement("a", {href: projectData[previousProject()].projectUrl}, "Prev"), "     ",
+          ), 
+          React.createElement("div", {className: "prev_next_project"}, 
+            React.createElement("a", {href: projectData[previousProject()].projectUrl}, "Prev"), "     ", 
             React.createElement("a", {href: projectData[nextProject()].projectUrl}, "Next")
           )
-        ),
-        React.createElement("div", {className: "copyright"},
-          React.createElement("span", {className: "left"}, " "),
-          React.createElement("span", null,
+        ), 
+        React.createElement("div", {className: "copyright"}, 
+          React.createElement("span", {className: "left"}, " "), 
+          React.createElement("span", null, 
             "© 2010 - 2015 studiowangfei | all rights reserved"
           )
         )
@@ -151,16 +135,16 @@ var BottomContainer = React.createClass({displayName: "BottomContainer",
 var ProjectSlideContainer = React.createClass({displayName: "ProjectSlideContainer",
   render: function(){
     return (
-      React.createElement("div", null,
-        React.createElement("div", {className: "project_slide_container"},
-          React.createElement("div", {className: "project_close"},
+      React.createElement("div", null, 
+        React.createElement("div", {className: "project_slide_container"}, 
+          React.createElement("div", {className: "project_close"}, 
             React.createElement("img", {src: "../img/close.png"})
-          ),
-          React.createElement("div", {className: "project_slide"},
+          ), 
+          React.createElement("div", {className: "project_slide"}, 
             React.createElement("div", {id: "project_arrow_left"}, React.createElement("img", {src: "../img/arrow_left.png"})
-            ),
+            ), 
             React.createElement("div", {className: "project_slide_img"}
-            ),
+            ), 
             React.createElement("div", {id: "project_arrow_right"}, React.createElement("img", {src: "../img/arrow_right.png"})
             )
           )
@@ -169,11 +153,6 @@ var ProjectSlideContainer = React.createClass({displayName: "ProjectSlideContain
     );
   }
 });
-
-React.render(
-  React.createElement(TopContainer, null),
-  document.getElementById('topContainer')
-);
 
 React.render(
   React.createElement(ProjectTitleContainer, null),
@@ -195,11 +174,9 @@ React.render(
   document.getElementById('projectSlideContainer')
 );
 
-////////////// jQuery control
+/////////////////// jQuery controller for all projects //////////////
+
 $(document).ready(function(){
-  $(window).on('beforeunload', function(){
-    $(window).scrollTop(0);
-  });
 
   // hide scroll when the project doesn't need it
   if(projectData[projectID].scrollDown === null){
@@ -208,50 +185,62 @@ $(document).ready(function(){
     $('#scroll').css('display', 'initial');
   }
 
+  // scroll down certain value when click
   $('#scroll').click(function(){
     $('body, html').animate({ scrollTop: projectData[projectID].scrollDownValue }, 800);
   });
 
-  // top section responsive to scroll up and down
-  $(window).scroll(function(){
-    $('.top-container').css('background-color', 'black')
-    .css('border-bottom', 'none');
-    $('#logo').css('color', 'white');
-    $('#current').css('color', 'white');
-    $('.item').hover(function(){
-      $(this).css('color', 'white');
-    }, function(){
-      $(this).css('color', '#888888');
-      $('#current').css('color', 'white');
-    });
-    var topMargin = $(window).scrollTop();
-    if (topMargin === 0){
-      $('.top-container').css('background-color', 'white')
-      .css('border-bottom', '1px solid #e3e3e3');
-      $('#current').css('color', 'black');
-      $('#logo').css('color', 'black');
-      $('.item').hover(function(){
-        $(this).css('color', 'black');
-      }, function(){
-        $(this).css('color', '#888888');
-        $('#current').css('color', 'black');
-      });
-    }
-  });
-
-  //slideshow image append
+  // slideshow image append
   var img_number = projectData[projectID].imgNum;
 
   for(var x=0;x<img_number;x++){
     $('.project_img').append(
-      '<img id="project_small_' + x + '" src="' + projectData[projectID].imgUrl + x +'_small.jpg"/>'
+      '<img id="project_small_' + x + '" src="' + projectData[projectID].imgUrl + x +'_big.jpg"/>'
     );
     $('.project_slide_img').append(
       '<img id="project_big_' + x + '" src="' + projectData[projectID].imgUrl + x +'_big.jpg"/>'
     );
   }
 
-  //project slideshow (automatic on page top-right)
+  // project image and brief text change layout according to window width
+  function projectImageLayout(){
+    var containerWidth = $('.feature_container').width();
+    if (containerWidth >= 920){
+      $('.project_img')
+      .css('width', '58%')
+      .css('margin', '0 auto')
+      .css('height', '560px');
+
+      $('.project_title')
+      .css('text-align', 'left');
+
+      $('.project_brief')
+      .css('width', '35%')
+      .css('margin-right', '7%')
+      .css('text-align', 'left');
+    }else{
+      $('.project_img')
+      .css('width', containerWidth*0.9 + 'px')
+      .css('margin', '0 auto')
+      .css('height', '720px');
+
+      $('.project_title')
+      .css('text-align', 'center');
+
+      $('.project_brief')
+      .css('text-align', 'center')
+      .css('width', containerWidth*0.75 + 'px')
+      .css('margin', '0 auto 64px auto');
+    }
+  }
+
+  projectImageLayout();
+
+  $(window).resize(function(){
+    projectImageLayout()
+  });
+
+  // project slideshow (automatic on page top-right)
   $(".project_img > img:gt(0)").hide();
 
   function slideSwitch(){
@@ -298,6 +287,7 @@ $(document).ready(function(){
     slide_resize();
   });
 
+  // slideshow show up and show in sequence
   var slideshowIndex = 0;
   function project_slideshow(id){
     return function(){
@@ -342,7 +332,7 @@ $(document).ready(function(){
   $('#project_arrow_right').click(project_slide_next);
   $('.project_slide_img img').click(project_slide_next);
 
-  // escape key setting, keycode '27', cover all project close functions
+  // escape key setting, keycode '27', only for standard project components
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
       $('body, html').css('overflow', 'auto');
@@ -350,9 +340,10 @@ $(document).ready(function(){
     }
   });
 
-  // close button setting, cover all project close functions
+  // close button setting, only for standard project components
   $('.project_close').click(function(){
     $('body, html').css('overflow', 'auto');
     $('.project_slide_container').hide();
   });
+
 });
