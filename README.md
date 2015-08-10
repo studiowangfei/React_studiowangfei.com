@@ -1,6 +1,6 @@
 http://www.studiowangfei.com/
 
-Personal website, mostly academic and research projects.
+Personal website, mostly design and research projects.
 A customizable framework built with web-component, handling both standard and customized interactive components.
 All data is JSON-based and linked with components.
 
