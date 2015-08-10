@@ -1,7 +1,7 @@
 http://www.studiowangfei.com/
 
 Personal website, mostly design and research projects.
-A customizable framework built with web-component, handling both standard and customized interactive components.
+A customizable project framework built with web-component, handling both standard and customized interactive components.
 All data is JSON-based and linked with components.
 
 - Component Type:
