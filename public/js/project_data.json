@@ -22,7 +22,7 @@ var projectData = [
   "scrollDownValue": 980,
   "relatedLinks": [
     {"website": " - SOM LLP.", "weblink": "http://www.som.com"}],
-  "story": "SOM BIM Data is a web-based dashboard for managing complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Rather than showcasing static project information like traditional CMS, SOM BIM Data is focusing on data and it's envisioned and designed as a collaborating platform for all players in one building project.",
+  "story": "SOM BIM Data is a web-based dashboard for managing complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Rather than showcasing static project information like traditional CMS, SOM BIM Data is focusing on data and it's envisioned and designed as a collaborating platform for all players working on the same building project.",
   "scrollDown": " to see its UI framework and data visualization"
   },
   {
@@ -35,7 +35,7 @@ var projectData = [
   "scrollDownValue": 980,
   "relatedLinks": [
     {"website": " - studiowangfei.com", "weblink": "http://www.studiowangfei.com"},
-    {"website": " - dev code on Github", "weblink": "https://github.com/studiowangfei/React_studiowangfei.com"}],
+    {"website": " - dev code on GitHub", "weblink": "https://github.com/studiowangfei/React_studiowangfei.com"}],
   "story": "Studiowangfei.com is my personal website and showcases design and research projects. I designed and built it from scratch with the concept of web-components. By tweaking the typologies of components, studiowangfei.com v1.0 was designed as a flexible framework that accomodates both standardization and customization. All project data is seperated as a JSON feed and hooked back with web-components. What you see here is the framework of the first release of this site, by now it probably has evolved.",
   "scrollDown": " to see the information architecture, UI framework and component typologies of this site."
   },
@@ -64,7 +64,7 @@ var projectData = [
   "relatedLinks": [
     {"website": " - MTA New York City", "weblink": "http://web.mta.info/nyct/facts/ridership/"},
   ],
-  "story": "Most of time data visualization targets on the crowd as a whole, which leaves personal touch behind. NYC Sub Rider-Readers tries to bridge the data of \"whole\" and the data of \"one\". Using digital data collected by ticket checking machine and physical mapping rendered by photographs and drawings, the project delivers an image of contemporary moving and reading in metropolis.",
+  "story": "Most of time data visualization targets on the crowd as a whole, which leaves personal touch behind. NYC Sub Rider-Readers tries to bridge the data of \"whole\" and the data of \"one\". Using the data collected by ticket checking machine and physical mapping rendered by photographs and drawings, the project delivers an image of moving and reading flow in contemporary metropolis.",
   "scrollDown": " to play with the interactive maps."
   },
   {

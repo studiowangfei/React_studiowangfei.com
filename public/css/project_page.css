@@ -52,7 +52,7 @@
 .project_img {
   position: relative;
 	width: 58%;
-  height: 560px;
+  height: 500px;
 }
 
 .project_img:hover{
@@ -167,6 +167,8 @@
 
 /* below are settings only for specific project and its feature */
 
+
+
 /* another leap */
 .anotherleap_circle img {
   width: 100%;
@@ -210,7 +212,7 @@
   position: relative;
 	height:470px;
 	width:400px;
-  margin: 32px auto;
+  margin: 64px auto;
   background-color: white;
 }
 
@@ -249,7 +251,7 @@
 
 .taobao_items_1, .taobao_items_2 {
 	max-width: 960px;
-  min-width: 480px;
+  min-width: 310px;
   margin: 0 auto 6.01% auto;
   height: auto;
   position: relative;
@@ -297,7 +299,7 @@
 
 .poker_row {
   max-width: 960px;
-  min-width: 480px;
+  min-width: 310px;
   margin-bottom: 16.3%;
   display: flex;
   display: -webkit-flex;
@@ -352,7 +354,7 @@
 
 .poker_logo_circle{
   border-radius: 64px;
-  box-shadow: 0px 4px 0px #e3e3e3;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .poker_logo_circle:hover{
@@ -361,7 +363,7 @@
 }
 
 #circle_1, #circle_2{
-  box-shadow: 4px 0px 0px #e3e3e3;
+  box-shadow: 4px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 .poker_logo_circle img{
@@ -456,7 +458,7 @@
   border-radius: 48px;
   margin-bottom: 24px;
   padding-top: 24px;
-  box-shadow: 0px 4px 1px #e3e3e3;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
   background-color: #FF6319;
 }
 
@@ -472,7 +474,6 @@
   cursor: pointer;
   opacity: 0.3;
 }
-
 
 /*taobao poker slide show*/
 .taobao_slide_container {
@@ -490,7 +491,7 @@
 
 .taobao_slide {
   max-width: 960px;
-  min-width: 480px;
+  min-width: 310px;
   padding:18px;
   margin: 0 auto;
   height: auto;
@@ -529,6 +530,7 @@
 #taobao_arrow_right{
   opacity: 0.3;
 }
+
 
 
 /* taobao 2*/
@@ -585,7 +587,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
 }
@@ -594,7 +596,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
   margin-top: 160px;
@@ -647,7 +649,7 @@
 
 .sfpopos_video iframe{
   width: 100%;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   margin-bottom: 128px
 }
 
@@ -655,7 +657,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
 }
@@ -700,7 +702,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
 }
@@ -744,7 +746,7 @@
   border-radius: 48px;
   margin-bottom: 6px;
   padding-top: 18px;
-  box-shadow: 0px 3px 1px #e3e3e3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .nycsub_lines_circle:hover{
@@ -768,7 +770,7 @@
   text-align: center;
   z-index: 3;
   background-color: black;
-  box-shadow: 0px 3px 2px #e3e3e3;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 .nycsub_map_scale{
@@ -852,8 +854,6 @@
   display: none;
 }
 
-
-
 /* MTA color http://web.mta.info/developers/resources/line_colors.htm */
 #nycsub_123 {
   background-color: #EE352E;
@@ -933,7 +933,7 @@
  }
 
 .nycsub_front {
-  box-shadow: 0 4px 2px #e3e3e3;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 
  .nycsub_front img, .nycsub_back img{
@@ -1058,9 +1058,6 @@
 
 
 
-
-
-
 /*urbanrural*/
 
 .urbanrural_trigger {
@@ -1086,36 +1083,36 @@
 
 .urbanrural_trigger div:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 4px #e3e3e3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .urbanrural_box {
   background-color: #c8c8c8;
-  box-shadow: 0px 4px 4px #e3e3e3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   color: white;
 }
 
 #urbanrural_image_box{
   max-width: 100%;
-  min-width: 480px;
+  min-width: 310px;
   position: relative;
-  box-shadow: 0px 20px 40px #e3e3e3;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .urbanrural_layer img{
   max-width: 100%;
-  min-width: 480px;
+  min-width: 310px;
   padding-top: 36px;
   position: absolute;
 }
 
 
 
-/*work*/
+/*W@RK*/
 
 .work_video iframe{
   width: 100%;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   margin-bottom: 128px
 }
 
@@ -1141,7 +1138,7 @@
   text-align: center;
   color: white;
   border: 1px solid #e3e3e3;
-  box-shadow: 0px 4px 1px #e3e3e3;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
   opacity: 0.25;
 }
 
@@ -1162,9 +1159,9 @@
 
 #work_image_box{
   max-width: 100%;
-  min-width: 480px;
+  min-width: 310px;
   position: relative;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   border-radius: 36px;
 }
 
@@ -1175,16 +1172,17 @@
 
 .work_layer img{
   max-width: 100%;
-  min-width: 480px;
+  min-width: 310px;
   position: absolute;
 }
+
 
 
 /*impressionism*/
 
 .impressionism_video iframe{
   width: 100%;
-  box-shadow: 0px 15px 30px #e3e3e3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   margin-bottom: 128px
 }
 
@@ -1192,11 +1190,15 @@
   margin-bottom: 0;
 }
 
+
+
 /*closer*/
 
 #photo_slide_container {
   background-color: black;
 }
+
+
 
 /*inside insight*/
 
@@ -1206,6 +1208,8 @@
   opacity: 0;
   position: relative;
 }
+
+
 
 /*website framework*/
 
@@ -1242,18 +1246,13 @@
   transition: 0.25s;
   -webkit-transition: 0.25s;
   -ms-transition: 0.25s;
-  box-shadow: 0px 4px 4px #e3e3e3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .componentImageHover{
-  box-shadow: 0px 16px 32px #b3b3b3;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.4);
   position: relative;
   top: -6px;
-}
-
-.briefComponent img,
-.weblinkComponent img{
-  width: 95%;
 }
 
 .titleComponent,
@@ -1265,7 +1264,9 @@
 .slideComponent,
 .mapComponent,
 .mediaComponent,
-.logComponent{
+.logComponent,
+.projectLeftContainer,
+.projectRightContainer{
   width: 49%;
 }
 
@@ -1317,10 +1318,12 @@
   width: 23%;
 }
 
+
+
 /* mylio */
 .ipad_mockup img{
-  width: 85%;
-  margin: 0 7.5%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .mylio_userflow_set{
@@ -1333,14 +1336,14 @@
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
+  position: relative;
 }
+
 .mylio_userflow_set div{
   margin: 0 auto;
 }
 
 .mylio_userflow_image{
-  width: 480px;
-  height: 337px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
@@ -1365,6 +1368,18 @@
 .device_orientation img{
   width: 85%;
   margin: -128px 0 0 15%;
+}
+
+/*special setting for descript aligned left*/
+#feature_descript_left{
+  font-size: 16px;
+  color: #919191;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  text-align: left;
+  width: 320px;
+  margin: 24px auto 48px 0;
 }
 
 .mylio_options div{
@@ -1398,6 +1413,10 @@
   line-height: 24px;
   color: #717171;
 }
+
+/*mylio mockup style setting, inline in HTML*/
+
+
 
 /* som bim */
 

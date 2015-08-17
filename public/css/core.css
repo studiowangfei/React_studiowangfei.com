@@ -102,7 +102,7 @@ a:hover {
 }
 
 .bold:hover {
-  border-bottom-color: red;
+  border-bottom-color: black;
   cursor: pointer;
   color: black;
 }
@@ -136,10 +136,10 @@ html, body {
 
 /* line 35, ../../sass/index.scss */
 .outer-container {
-  max-width:1032px;
-  min-width:552px;
+  max-width:996px;
+  min-width:346px;
   margin: 0 auto;
-  padding: 36px;
+  padding: 18px;
   padding-top: 0;
   overflow: auto;
   box-sizing: border-box;
@@ -147,7 +147,6 @@ html, body {
   position: relative;
 }
 
-/* line 43, ../../sass/index.scss */
 .top-placeholder {
   position: relative;
   height: 32px;
@@ -156,9 +155,10 @@ html, body {
 
 .top-container{
   width: 100%;
+  height: 64px;
   position: fixed;
   background-color: white;
-  padding: 0px 36px;
+  padding: 4px 36px 0 36px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   top: 0;
@@ -177,7 +177,7 @@ html, body {
   -ms-justify-content: space-between;
   margin: 0 auto;
   max-width: 960px;
-  min-width: 480px;
+  min-width: 310px;
   padding: 21px 0;
   font-size: 12px;
   font-weight: 500;
@@ -186,11 +186,11 @@ html, body {
   text-transform: uppercase;
 }
 
-.top-section div a, .top-section div a:visited{
+.top-container a, .top-container a:visited{
   color: #a3a3a3;
 }
 
-.top-section div a:hover{
+.top-container a:hover{
   color: black;
 }
 
@@ -203,12 +203,31 @@ html, body {
   font-weight: 500;
 }
 
-#logo, #logo:visited {
+.top-section .right {
+  width: 320px;
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+}
+
+#current,
+#current:hover,
+#current:visited,
+#logo,
+#logo:hover,
+#logo:visited {
   color: black;
 }
 
-#current {
-  color: black;
+#logo{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .top-section .item {
@@ -223,6 +242,53 @@ html, body {
   margin-right: 0;
 }
 
+.hiddenList{
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 320px;
+  padding: 16px 0;
+  border-top: 1px solid #d3d3d3;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: right;
+  text-transform: uppercase;
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url(../img/rotate.png) center no-repeat;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+.menu-icon-transform{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+}
+
+#menu-icon:hover{
+  cursor: pointer;
+  opacity: 0.25;
+}
+
+.addColorShadow {
+  background-color: #f3f3f3;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.extendHeight {
+  height: 242px;
+}
+
+/* footer */
 .bottom-section {
   display: -webkit-flex;
   display: flex;

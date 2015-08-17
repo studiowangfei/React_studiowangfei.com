@@ -8,12 +8,14 @@ $(document).ready(function(){
     }
   }
 
+  // sprite for user flow images
   for (var i=0; i<16; i++){
     // userflow image sprite
     $('#mylio_userflow_image_' + i)
     .css('background-image', 'url("../img/project/mylio/dark_sprite.jpg")')
+    .css('background-size', '1600% 100%')
     .css('background-repeat','no-repeat')
-    .css('background-position', -480*i+'px 0px');
+    .css('background-position', 20/3*i+'% 0%')
 
     // showing image title
     $('#mylio_userflow_image_' + i)
@@ -21,13 +23,49 @@ $(document).ready(function(){
     .mouseleave(showTitle(0, i));
   }
 
-  // sprite for user flow images
-  $('#mylio_userflow_image_0')
-  .css('background-image', 'url("../img/project/mylio/dark_sprite.jpg")')
-  .css('background-repeat','no-repeat')
-  .css('background-position', '0px 0px');
+  // optimize user flow image work for mobile (appx 310px)
+  // and optimize mock up options on the bottom
 
-  // mylio mock-up script
+  function mylioUserFlowImageLayout(){
+    var containerWidth = $('.feature_container').width();
+
+    // user flow images
+    if (containerWidth < 480){
+      // regular images
+      $('.mylio_userflow_image')
+      .css('width', containerWidth*1+'px')
+      .css('height', containerWidth*0.702+'px');
+
+      $('.device_orientation img')
+      .css('margin', '0 auto');
+
+    }else{
+      $('.mylio_userflow_image')
+      .css('width', '480px')
+      .css('height', '337px');
+
+      $('.device_orientation img')
+      .css('margin', '-128px 0 0 15%');
+    }
+
+    // mock up opton images
+    if (containerWidth < 640){
+      $('.mylio_options img')
+      .css('width', containerWidth*1+'px')
+      .css('height', containerWidth*0.68125+'px');
+    }else{
+      $('.mylio_options img')
+      .css('width', 'initial')
+      .css('height', 'initial');
+    }
+  }
+
+  mylioUserFlowImageLayout();
+  $(window).resize(function(){
+    mylioUserFlowImageLayout();
+  });
+
+  // mylio live mock-up script
   var mylioSwitchIndex = 0;
   function switchPair(i){
     return function(){
@@ -35,8 +73,12 @@ $(document).ready(function(){
         if(mylioSwitchIndex === 0){
           $('.pic-0, .pic-1').css('border', '4px solid #212121');
           $('.pic-'+i).css('border', '4px solid #2AACE8');
-          $('.pic-0 img, .pic-1 img').css('-webkit-filter','none');
-          $('.pic-'+i+' img').addClass('selected').css('-webkit-filter','sepia(100%)');
+          $('.pic-0 img, .pic-1 img')
+          .css('filter', 'none')
+          .css('-webkit-filter','none');
+          $('.pic-'+i+' img').addClass('selected')
+          .css('filter', 'sepia(100%)')
+          .css('-webkit-filter','sepia(100%)');
           $('.mylio-mockup-sort-container').animate({scrollTop:285}, 750);
           mylioSwitchIndex = 1;
         }else{
@@ -47,8 +89,12 @@ $(document).ready(function(){
         if(mylioSwitchIndex === 1){
           $('.pic-2, .pic-3').css('border', '4px solid #212121');
           $('.pic-'+i).css('border', '4px solid #2AACE8');
-          $('.pic-2 img, .pic-3 img').css('-webkit-filter','none');
-          $('.pic-'+i+' img').addClass('selected').css('-webkit-filter','sepia(100%)');
+          $('.pic-2 img, .pic-3 img')
+          .css('filter', 'none')
+          .css('-webkit-filter','none');
+          $('.pic-'+i+' img').addClass('selected')
+          .css('filter', 'sepia(100%)')
+          .css('-webkit-filter','sepia(100%)');
           $('.mylio-mockup-sort-container').animate({scrollTop:570}, 750);
           mylioSwitchIndex = 2;
         }else{
@@ -59,8 +105,12 @@ $(document).ready(function(){
         if (mylioSwitchIndex === 2){
           $('.pic-4, .pic-5').css('border', '4px solid #212121');
           $('.pic-'+i).css('border', '4px solid #2AACE8');
-          $('.pic-4 img, .pic-5 img').css('-webkit-filter','none');
-          $('.pic-'+i+' img').addClass('selected').css('-webkit-filter','sepia(100%)');
+          $('.pic-4 img, .pic-5 img')
+          .css('filter', 'none')
+          .css('-webkit-filter','none');
+          $('.pic-'+i+' img').addClass('selected')
+          .css('filter', 'sepia(100%)')
+          .css('-webkit-filter','sepia(100%)');
           $('.mylio-mockup-sort-container').animate({scrollTop:936}, 750);
           mylioSwitchIndex = 2;
         }else{
@@ -120,13 +170,19 @@ $(document).ready(function(){
   $('.undo').click(function(){
     if(mylioSwitchIndex===0){
       $('.pic-0, .pic-1').css('border', '4px solid #212121');
-      $('.pic-0 img, .pic-1 img').css('-webkit-filter','none');
+      $('.pic-0 img, .pic-1 img')
+      .css('filter', 'none')
+      .css('-webkit-filter','none');
     }else if(mylioSwitchIndex===1){
-      $('.pic-2, .pic-3').css('border', '4px solid #212121');
+      $('.pic-2, .pic-3')
+      .css('filter', 'none')
+      .css('border', '4px solid #212121');
       $('.pic-2 img, .pic-3 img').css('-webkit-filter','none');
     }else if(mylioSwitchIndex===2){
       $('.pic-4, .pic-5').css('border', '4px solid #212121');
-      $('.pic-4 img, .pic-5 img').css('-webkit-filter','none');
+      $('.pic-4 img, .pic-5 img')
+      .css('filter', 'none')
+      .css('-webkit-filter','none');
     }
   });
 

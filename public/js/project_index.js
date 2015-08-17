@@ -38,11 +38,14 @@ $(document).ready(function(){
       projectUrl="project/closer.html"
     }
 
-    $('.icon_container').append('<div class="flipper" id="flipper_'+i+'"><a href='+projectUrl+'><div class="front"></div></a><div class="back"></div></div>');
+    $('.icon_container').append('<div class="flipper" id="flipper_'+i+'">'
+      +'<a href='+projectUrl+'><div class="front"></div></a><div class="back"></div></div>');
+
     $('#flipper_'+i+' .front')
     .css('background-image', 'url("img/project/project_icon/project_sprite_front.png")')
     .css('background-repeat','no-repeat')
     .css('background-position', -220*i+'px 0px');
+
     $('#flipper_'+i+' .back')
     .css('background-image', 'url("img/project/project_icon/project_sprite_back.png")')
     .css('background-repeat','no-repeat')
@@ -60,4 +63,29 @@ $(document).ready(function(){
       .css('opacity', '1')
     }
   );
+
+  // project icons layout setting
+  // responsive to window width
+  function projectIconLayout(){
+    var containerWidth = $(window).width();
+    if (containerWidth >= 1032){
+      $('.icon_container')
+      .css('width', '960px');
+    }else if (containerWidth >= 792){
+      $('.icon_container')
+      .css('width', '720px');
+    }else if (containerWidth >= 552){
+      $('.icon_container')
+      .css('width', '480px');
+    }else{
+      $('.icon_container')
+      .css('width', '240px');
+    }
+  }
+
+  projectIconLayout();
+  $(window).resize(function(){
+    projectIconLayout();
+  });
+
 });

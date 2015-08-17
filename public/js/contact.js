@@ -4,8 +4,48 @@ $(document).ready(function(){
   $('.bottom-section').css('margin-top', '224px');
 
   $('#qrCode').click(function(){
-    $('#qrCode_img').fadeToggle('fast');
-    $('#sfphoto').fadeToggle('fast');
+    $('#qrCode_img').fadeToggle('slow');
+    $('#sfphoto').toggleClass('makeTransparent');
   });
+
+  // image and brief text change layout according to window width
+  function contactImageLayout(){
+    var containerWidth = $('.main-container').width();
+    if (containerWidth >= 840){
+      $('.contact_title')
+      .css('margin', '0')
+      .css('text-align', 'left');
+
+      $('.contact_brief')
+      .css('width', '50.25%')
+      .css('margin', '0')
+      .css('text-align', 'left');
+
+      $('.contact_img')
+      .css('width', '360px')
+      .css('margin', '0');
+
+    }else{
+      $('.contact_title')
+      .css('margin', '0 auto')
+      .css('text-align', 'center');
+
+      $('.contact_brief')
+      .css('width', '80%')
+      .css('margin', '0 auto')
+      .css('text-align', 'center');
+
+      $('.contact_img')
+      .css('width', '480px')
+      .css('margin', '48px auto 0 auto');
+    }
+  }
+
+  contactImageLayout();
+
+  $(window).resize(function(){
+    contactImageLayout()
+  });
+
 
 });

@@ -205,11 +205,11 @@ $(document).ready(function(){
   // project image and brief text change layout according to window width
   function projectImageLayout(){
     var containerWidth = $('.feature_container').width();
-    if (containerWidth >= 920){
+    if (containerWidth >= 840){
       $('.project_img')
       .css('width', '58%')
       .css('margin', '0 auto')
-      .css('height', '560px');
+      .css('height', '500px');
 
       $('.project_title')
       .css('text-align', 'left');
@@ -218,19 +218,27 @@ $(document).ready(function(){
       .css('width', '35%')
       .css('margin-right', '7%')
       .css('text-align', 'left');
+
+      $('.feature_descript')
+      .css('width', '75%');
+
     }else{
+
       $('.project_img')
       .css('width', containerWidth*0.9 + 'px')
       .css('margin', '0 auto')
-      .css('height', '720px');
+      .css('height', containerWidth*0.7 + 'px');
 
       $('.project_title')
       .css('text-align', 'center');
 
       $('.project_brief')
       .css('text-align', 'center')
-      .css('width', containerWidth*0.75 + 'px')
+      .css('width', containerWidth*0.9 + 'px')
       .css('margin', '0 auto 64px auto');
+
+      $('.feature_descript')
+      .css('width', containerWidth*0.9 + 'px');
     }
   }
 
