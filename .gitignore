@@ -13,5 +13,8 @@ node_modules/
 # image
 public/img/
 
+# JSX-syntax files
+public/js/jsx/
+
 # JSX transformer
 public/js/.module-cache
