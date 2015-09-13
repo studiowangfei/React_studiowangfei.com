@@ -4,37 +4,41 @@ $(document).ready(function(){
   });
 
    //flipper append, using sprite method
-  for(var i=0;i<16;i++){
+  for(var i=0;i<17;i++){
     var projectUrl;
     if(i===0){
       projectUrl="project/mylio.html"
     }else if(i===1){
       projectUrl="project/sombim.html"
     }else if(i===2){
-      projectUrl="project/webframe.html"
+      projectUrl="project/linkedin.html"
     }else if(i===3){
-      projectUrl="project/taobao_2.html"
+      projectUrl="project/zoom.html"
     }else if(i===4){
       projectUrl="project/nycsub.html"
     }else if(i===5){
-      projectUrl="project/inin.html"
+      projectUrl="project/taobao_2.html"
     }else if(i===6){
-      projectUrl="project/taobao.html"
-    }else if(i===7){
       projectUrl="project/sfpopos.html"
+    }else if(i===7){
+      projectUrl="project/webframe.html"
     }else if(i===8){
-      projectUrl="project/work.html"
+      projectUrl="project/taobao.html"
     }else if(i===9){
-      projectUrl="project/anotherleap.html"
+      projectUrl="project/inin.html"
     }else if(i===10){
-      projectUrl="project/urbanrural.html"
+      projectUrl="project/work.html"
     }else if(i===11){
-      projectUrl="project/impressionism.html"
+      projectUrl="project/anotherleap.html"
     }else if(i===12){
-      projectUrl="project/holistic.html"
+      projectUrl="project/urbanrural.html"
     }else if(i===13){
-      projectUrl="project/drawit.html"
+      projectUrl="project/impressionism.html"
     }else if(i===14){
+      projectUrl="project/holistic.html"
+    }else if(i===15){
+      projectUrl="project/drawit.html"
+    }else if(i===16){
       projectUrl="project/closer.html"
     }
 
@@ -52,9 +56,9 @@ $(document).ready(function(){
     .css('background-position', -220*i+'px 0px');
   };
 
-  // adjust last icon for last row
+  // adjust last icon for last row (not necessary when n=4x)
   // hide but still maintain that placeholder for flex justify-content: space-between
-  $('#flipper_15').empty();
+  //$('#flipper_15').empty();
 
   // change opacity to show title when hover
   $('.front').mouseenter(

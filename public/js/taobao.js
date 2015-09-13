@@ -116,11 +116,6 @@ $(document).ready(function(){
     }
   });
 
-  //click and scroll down
-  $('#taobao_down').click(function(){
-    $('body, html').animate({ scrollTop: 1600 }, 'slow');
-  });
-
   // poker sort move top when hover
   function move(x, y){
     return function(){
@@ -205,11 +200,6 @@ $(document).ready(function(){
     }
   })();
 
-  //scroll back to top when clicked
-  $('#taobao_up').click(function(){
-    $('body, html').animate({ scrollTop: 800 }, 'slow');
-  });
-
   //showdown all pokers when clicked
   $('#taobao_showdown').click(function(){
     for(var i=0; i<108; i++){
@@ -267,12 +257,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var taobao_poker_height = $('.taobao_poker').height();
-    if(scrollHeight>960 && scrollHeight<1240+taobao_poker_height){
+    if(scrollHeight>2760 && scrollHeight<3540+taobao_poker_height){
       $('.taobao_trigger_1').fadeIn('slow');
     }else{
       $('.taobao_trigger_1').fadeOut('slow');
     };
-    if(scrollHeight>1240+taobao_poker_height){
+    if(scrollHeight>3540+taobao_poker_height && scrollHeight<4440+taobao_poker_height){
       $('.taobao_trigger_2').fadeIn('slow');
     }else{
       $('.taobao_trigger_2').fadeOut('slow');

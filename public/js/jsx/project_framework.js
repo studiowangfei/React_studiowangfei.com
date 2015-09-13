@@ -1,15 +1,16 @@
 // do NOT write comment like"// xxxxxxxx" in JSX syntax, it cannot be parsed or skipped
 
-////////////////// project index setting
+// project index
 var projectList = [
   "Mylio Pair",
   "SOM BIM Data Dashboard",
-  "Studiowangfei.com v1.0",
+  "LinkedIn Welcome-Back Portal",
   "Another Taobao Village 2",
   "New York City Sub Rider-Readers",
-  "Inside x Insight",
+  "Studiowangfei.com v1.0",
   "Another Taobao Village",
   "San Francisco POPOS",
+  "Inside x Insight",
   "W@RK",
   "Another Leap",
   "Urban v.s. Rural of China 1979- ",

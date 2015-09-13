@@ -35,6 +35,27 @@ $(document).ready(function(){
     map_resize();
   });
 
+
+  // shadow images loop
+  $(".sfpopos_feature_regular > img:gt(0)").hide();
+
+  function sfpoposSwitch(){
+    $('.sfpopos_feature_regular > img:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('.sfpopos_feature_regular');
+  }
+
+  //slideshow pause when hover
+  var sfpoposInterval;
+  function loopShow() {
+    sfpoposInterval = setInterval(sfpoposSwitch, 4000);
+  }
+
+  loopShow();
+
   //map fullscreen and exit
   $('#map_fullscreen').click(function(){
     scrollHeight = $(window).scrollTop();
@@ -72,7 +93,7 @@ function initialize(){
   // to the map type control.
 
   var mapOptions = {
-    zoom: 15,
+    zoom: 17,
     center: new google.maps.LatLng(37.791117, -122.399004),
     disableDefaultUI: false,
     streetViewControl: false,
@@ -110,7 +131,7 @@ function initialize(){
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: rating_color,
         fillOpacity: 0.85,
-        scale: 20,
+        scale: 15,
         strokeColor: 'black',
         strokeWeight: 0
       },

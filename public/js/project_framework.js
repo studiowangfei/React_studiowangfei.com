@@ -4,12 +4,14 @@
 var projectList = [
   "Mylio Pair",
   "SOM BIM Data Dashboard",
-  "Studiowangfei.com v1.0",
-  "Another Taobao Village 2",
+  "LinkedIn Welcome-Back Portal",
+  "Zoom Video New Home-Landing",
   "New York City Sub Rider-Readers",
-  "Inside x Insight",
-  "Another Taobao Village",
+  "Another Taobao Village 2",
   "San Francisco POPOS",
+  "Studiowangfei.com v1.0",
+  "Another Taobao Village 1",
+  "Inside x Insight",
   "W@RK",
   "Another Leap",
   "Urban v.s. Rural of China 1979- ",
@@ -57,8 +59,8 @@ var previousProject = function(){
 var ProjectTitleContainer = React.createClass({displayName: "ProjectTitleContainer",
   render: function(){
     return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "project_title"}, 
+      React.createElement("div", null,
+        React.createElement("div", {className: "project_title"},
           projectData[projectID].name
         )
       )
@@ -69,8 +71,8 @@ var ProjectTitleContainer = React.createClass({displayName: "ProjectTitleContain
 var Link = React.createClass({displayName: "Link",
   render: function(){
     return (
-      React.createElement("div", null, 
-        React.createElement("a", {id: "linkNodes", href: this.props.weblink}, 
+      React.createElement("div", null,
+        React.createElement("a", {id: "linkNodes", href: this.props.weblink},
           this.props.website
         )
       )
@@ -89,16 +91,16 @@ var ProjectContainer = React.createClass({displayName: "ProjectContainer",
       });
     }
     return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "project_container"}, 
+      React.createElement("div", null,
+        React.createElement("div", {className: "project_container"},
 
-          React.createElement("div", {className: "project_brief"}, 
-            projectData[projectID].story, 
-            React.createElement("br", null), React.createElement("br", null), 
-            linkNodes, 
-            React.createElement("br", null), 
+          React.createElement("div", {className: "project_brief"},
+            projectData[projectID].story,
+            React.createElement("br", null), React.createElement("br", null),
+            linkNodes,
+            React.createElement("br", null),
             React.createElement("span", {className: "bold", id: "scroll"}, " Scroll down"), " ", projectData[projectID].scrollDown
-          ), 
+          ),
 
           React.createElement("div", {className: "project_img"}
           )
@@ -111,19 +113,19 @@ var ProjectContainer = React.createClass({displayName: "ProjectContainer",
 var BottomContainer = React.createClass({displayName: "BottomContainer",
   render: function(){
     return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "bottom-section"}, 
-          React.createElement("div", {className: "back_project"}, 
+      React.createElement("div", null,
+        React.createElement("div", {className: "bottom-section"},
+          React.createElement("div", {className: "back_project"},
             React.createElement("a", {href: "../project.html"}, "Back")
-          ), 
-          React.createElement("div", {className: "prev_next_project"}, 
-            React.createElement("a", {href: projectData[previousProject()].projectUrl}, "Prev"), "     ", 
+          ),
+          React.createElement("div", {className: "prev_next_project"},
+            React.createElement("a", {href: projectData[previousProject()].projectUrl}, "Prev"), "     ",
             React.createElement("a", {href: projectData[nextProject()].projectUrl}, "Next")
           )
-        ), 
-        React.createElement("div", {className: "copyright"}, 
-          React.createElement("span", {className: "left"}, " "), 
-          React.createElement("span", null, 
+        ),
+        React.createElement("div", {className: "copyright"},
+          React.createElement("span", {className: "left"}, " "),
+          React.createElement("span", null,
             "© 2010 - 2015 studiowangfei | all rights reserved"
           )
         )
@@ -135,16 +137,16 @@ var BottomContainer = React.createClass({displayName: "BottomContainer",
 var ProjectSlideContainer = React.createClass({displayName: "ProjectSlideContainer",
   render: function(){
     return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "project_slide_container"}, 
-          React.createElement("div", {className: "project_close"}, 
+      React.createElement("div", null,
+        React.createElement("div", {className: "project_slide_container"},
+          React.createElement("div", {className: "project_close"},
             React.createElement("img", {src: "../img/close.png"})
-          ), 
-          React.createElement("div", {className: "project_slide"}, 
+          ),
+          React.createElement("div", {className: "project_slide"},
             React.createElement("div", {id: "project_arrow_left"}, React.createElement("img", {src: "../img/arrow_left.png"})
-            ), 
+            ),
             React.createElement("div", {className: "project_slide_img"}
-            ), 
+            ),
             React.createElement("div", {id: "project_arrow_right"}, React.createElement("img", {src: "../img/arrow_right.png"})
             )
           )
@@ -187,7 +189,7 @@ $(document).ready(function(){
 
   // scroll down certain value when click
   $('#scroll').click(function(){
-    $('body, html').animate({ scrollTop: projectData[projectID].scrollDownValue }, 800);
+    $('body, html').animate({ scrollTop: projectData[projectID].scrollDownValue }, 600);
   });
 
   // slideshow image append
@@ -209,7 +211,7 @@ $(document).ready(function(){
       $('.project_img')
       .css('width', '58%')
       .css('margin', '0 auto')
-      .css('height', '500px');
+      .css('height', '400px');
 
       $('.project_title')
       .css('text-align', 'left');

@@ -1,8 +1,9 @@
 .about_title {
-	font-size: 42px;
-	padding-bottom: 48px;
-	font-weight:300;
-	color:black;
+   font-size: 24px;
+   font-weight: 500;
+   color: black;
+   padding-bottom: 36px;
+   text-align: left;
 }
 
 .about_container {
@@ -22,8 +23,8 @@
 .about_brief {
 	font-size: 18px;
   color: #919191;
-  font-weight: 400;
-  line-height: 36px;
+  font-weight: 300;
+  line-height: 32px;
   text-transform: none;
 }
 
@@ -39,7 +40,7 @@
 }
 
 .about_link, .about_link:visited{
-  border-bottom: 3px solid #e3e3e3;
+  border-bottom: 4px solid #e3e3e3;
   color: #919191;
 }
 

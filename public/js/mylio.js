@@ -1,12 +1,5 @@
 $(document).ready(function(){
 
-  // showing title when hovering on images
-  function showTitle(n, i){
-    return function(){
-      $('.mylio_userflow_'+ i +' p')
-      .css('opacity', n);
-    }
-  }
 
   // sprite for user flow images
   for (var i=0; i<16; i++){
@@ -15,12 +8,7 @@ $(document).ready(function(){
     .css('background-image', 'url("../img/project/mylio/dark_sprite.jpg")')
     .css('background-size', '1600% 100%')
     .css('background-repeat','no-repeat')
-    .css('background-position', 20/3*i+'% 0%')
-
-    // showing image title
-    $('#mylio_userflow_image_' + i)
-    .mouseenter(showTitle(1, i))
-    .mouseleave(showTitle(0, i));
+    .css('background-position', 20/3*i+'% 0%');
   }
 
   // optimize user flow image work for mobile (appx 310px)
@@ -41,8 +29,8 @@ $(document).ready(function(){
 
     }else{
       $('.mylio_userflow_image')
-      .css('width', '480px')
-      .css('height', '337px');
+      .css('width', '472px')
+      .css('height', '332px');
 
       $('.device_orientation img')
       .css('margin', '-128px 0 0 15%');
@@ -65,7 +53,7 @@ $(document).ready(function(){
     mylioUserFlowImageLayout();
   });
 
-  // mylio live mock-up script
+  /////////// below is mylio live mock-up script ///////////
   var mylioSwitchIndex = 0;
   function switchPair(i){
     return function(){

@@ -47,7 +47,7 @@ $(document).ready(function(){
       .css('margin-top', '80px');
 
       $('.sombim_userflow_10, .sombim_userflow_11')
-      .css('width', '85%')
+      .css('width', '92%')
       .css('margin', '0 auto');
 
       $('.sombim_userflow_set p')

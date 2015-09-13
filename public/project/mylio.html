@@ -21,25 +21,60 @@
         <!--customized part-->
         <div class="feature_container">
           <div class="feature_title">
-            Sort out your old photos.
-            <br>Effortless and playful.</br>
+            User Problem
           </div>
           <div class="feature_descript">
-            Not every photo has (correct) EXIF data. Time-sequencing old photos without (correct) EXIF requires a lot of input from user, and sorting process can be long, complex and tedious. Mylio Pair introduces a human-computer double-end sorting process that turns this frustrating manual task into something easier, faster and even addictive. The user experience of this comparing and choosing process is designed to be intuitive, effortless and playful.
+            Not every photo has (correct) EXIF data. Time-sequencing scanned photos without (correct) EXIF cannot is currently an impossible task for computer and photo apps usually fail to recognize the real date of a scanned photo. When user scans an old photo taken in 1995 and then uploads to any photo app, the system probably recognizes its date as 2015 because that is the EXIF info the scanner generates. To solve this problem, it needs human input from the user who knows the real date of the photo. However, the manual sorting process can be long, complex and tedious.
           </div>
-          <div class="ipad_mockup">
-            <img src="../img/project/mylio/ipad_mockup.png" />
+          <div class="feature_regular">
+            <img src="../img/project/mylio/user_scan.jpg" />
           </div>
 
 
           <div class="feature_title">
-            Pair. Compare. Done.
+            Design Goal
           </div>
           <div class="feature_descript">
-            Every time Mylio Pair only presents two photos for user to choose the older (or the newer) one, then the software records each comparing result and uses it to constantly re-sequence all photos in the backend, and re-generates new pair for user to compare. After certain times of pair comparing, all photos can be sorted into a timeline.
+            <p>"Sorting should not be a task for Mylio's user, it should be a game."</p>
+            <p>"A beautiful human sorting experience that is fast, effortless, and playful." - PM</p>
+            <br></br>
+            <p>The overall sorting experience design can be evaluated by the following points:</p>
+            <div class="mylio_goal_list">
+              <div>
+                <li>Ask user easy question</li>
+                <li>Intuitive user interaction</li>
+                <li>Minimal user physical input</li>
+              </div>
+              <div>
+                <li>Sorting speed</li>
+                <li>Sorting accuracy</li>
+                <li>Reversiblity & Forgiveness</li>
+              </div>
+              <div>
+                <li>Feedback & Responsiveness</li>
+                <li>Integration with current UI</li>
+                <li>Adaptability to all devices</li>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature_title">
+            Pair Sorting
+          </div>
+          <div class="feature_descript">
+            Instead of asking user to organize all photos using folder or tag system - which is asking user "what" and "when" questions, Mylio Pair introduces a Pair & Compare strategy to simplify the question to "which". On front-end, every time the system only presents two photos and asks user to choose which is the older (newer) one. On back-end, the system marks user's choice and keeps re-sequencing all photos and generates new pairs for user to compare. After certain times of pair comparing, all photos can be sorted into a timeline.
+          </div>
+          <div class="feature_regular">
+            <img src="../img/project/mylio/pair_sorting.jpg" />
+          </div>
+
+          <div class="feature_title">
+            Sorting Flow
+          </div>
+          <div class="feature_descript">
+            Mylio Pair works as a human-computer double-end sorting process that turns the frustrating manual task into something easier, faster and even addictive. The sorting interactions are designed to be intuitive, responsive and speedy, which creates a game-like experience.
           </div>
           <div class="mylio_userflow_set">
-
             <div class="mylio_userflow_0">
               <p> 1. System presents one pair of photos </p>
               <div class="mylio_userflow_image" id="mylio_userflow_image_0"></div>
@@ -49,21 +84,20 @@
               <div class="mylio_userflow_image" id="mylio_userflow_image_1"></div>
             </div>
             <div class="mylio_userflow_2">
-              <p> 3. Old photo filter effect provides feedback </p>
+              <p> 3. Old-photo filter effect provides feedback </p>
               <div class="mylio_userflow_image" id="mylio_userflow_image_2"></div>
             </div>
             <div class="mylio_userflow_3">
               <p> 4. System generates the next pair </p>
               <div class="mylio_userflow_image" id="mylio_userflow_image_3"></div>
             </div>
-
           </div>
 
           <div class="feature_title">
-            Fuzzy and forgiving.
+            Fuzzy and forgiving
           </div>
           <div class="feature_descript">
-            Another problem is that old photos can sometimes make user feel fuzzy. When user can not make a decision about the current compare, the software is able to let user skip and move to the next pair. When user realizes she/he made a wrong pick, she/he can easily go back to the previous pairs and view the results. User can change the result simply by choosing the other photo, or tapping the undo button to remove the existing choice and just leave it fuzzy.
+            Another problem is that old photos can sometimes make user feel fuzzy. When user can not make a decision about the current compare, Mylio is able to let user skip and move to the next pair. When user realizes she/he made a wrong pick, she/he can easily go back to the previous pairs and view the results. User can change the result simply by choosing the other photo, or tapping the undo button to remove the existing choice and just leave it fuzzy.
           </div>
           <div class="mylio_userflow_set">
 
@@ -92,7 +126,7 @@
               <div class="mylio_userflow_image" id="mylio_userflow_image_9"></div>
             </div>
             <div class="mylio_userflow_10">
-              <p> 7. User can undo a comparing result via the button</p>
+              <p> 7. User can undo a result via the button</p>
               <div class="mylio_userflow_image" id="mylio_userflow_image_10"></div>
             </div>
             <div class="mylio_userflow_11">
@@ -130,10 +164,15 @@
           </div>
 
           <div class="feature_title">
-            Mock-up in live.
+            A Live Prototype
           </div>
           <div class="feature_descript">
-            A quick web mock-up to show the user interaction flow and feedbacks. Try clicking on photo, button and navigating panel to see how it works.
+            I coded up a web-based prototype to show the user interaction flow and feedbacks. Try clicking on photo, button and navigating panel to see how it works.
+            <br></br>
+            <p style="text-align: left; margin-left: 25%">1. Mouse click on photo to select.
+            <p style="text-align: left; margin-left: 25%">2. Mouse click on peekview to go forward(skip) and go back(modify).
+            <p style="text-align: left; margin-left: 25%">3. Mouse click on "undo" button to undo the result.
+            <p style="text-align: left; margin-left: 25%">4. Mouse click on side panel to fast navigate.
           </div>
 
           <!-- inline style for mylio mock-up -->
@@ -172,15 +211,11 @@
 
           <!-- mylio mock-up ends-->
 
-          <div class="feature_title" style="text-align: left;">
-            Sort and play.
-            <br>Anytime. Anywhere.</br>
+          <div class="feature_title">
+            Sort and play, on any devices.
           </div>
-          <div id="feature_descript_left">
-            The Mylio Pair UI is designed and built to adapt to all devices with different sizes, orientations and user gestures.
-          </div>
-          <div class="device_orientation">
-            <img src="../img/project/mylio/two_orientation.png" />
+          <div class="feature_descript">
+            Mylio Pair UI is designed to adapt to all devices with different sizes, orientations and user interaction gestures.
           </div>
           <div class="device_compose">
             <img src="../img/project/mylio/device_compose.png" />
