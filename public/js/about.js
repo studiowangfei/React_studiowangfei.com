@@ -9,7 +9,7 @@ $(document).ready(function(){
       .css('text-align', 'left');
 
       $('.about_brief')
-      .css('width', '50.25%')
+      .css('width', '45.25%')
       .css('margin', '0')
       .css('text-align', 'left');
 

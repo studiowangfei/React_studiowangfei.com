@@ -129,10 +129,13 @@ html, body {
   -webkit-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
+  -moz-flex-direction: column;
   position: relative;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -mms-box-sizing: border-box;
+  //overflow: auto;
 }
 
 /* line 35, ../../sass/index.scss */
@@ -142,11 +145,12 @@ html, body {
   margin: 0 auto;
   padding: 18px;
   padding-top: 0;
-  overflow: auto;
+  overflow: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   position: relative;
-  overflow: hidden;
 }
 
 .top-placeholder {
@@ -163,11 +167,15 @@ html, body {
   padding: 4px 36px 0 36px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   top: 0;
   z-index: 3;
   opacity: 0.98;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
 }
 
 .top-section {
@@ -176,6 +184,7 @@ html, body {
   display: -ms-flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   margin: 0 auto;
   max-width: 960px;
@@ -185,14 +194,23 @@ html, body {
   font-weight: 500;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   text-transform: uppercase;
 }
 
 .top-container a, .top-container a:visited{
-  color: #a3a3a3;
+  color: #b0b0b0;
 }
 
 .top-container a:hover{
+  color: black;
+}
+
+#current,
+#current:hover,
+#current:visited,
+#logo:hover{
   color: black;
 }
 
@@ -200,8 +218,8 @@ html, body {
   -webkit-flex: 1;
   flex: 1;
   -ms-flex: 1;
-  text-transform: uppercase;
-  font-size: 14px;
+  text-transform: none;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -213,27 +231,27 @@ html, body {
   justify-content: space-between;
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   text-align: center;
-}
-
-#current,
-#current:hover,
-#current:visited,
-#logo,
-#logo:hover,
-#logo:visited {
-  color: black;
 }
 
 #logo{
   transition: 0.5s;
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 .top-section .item {
   margin: 0 24px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 .top-section .item:first-child {
@@ -255,9 +273,18 @@ html, body {
   font-weight: 500;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   text-align: right;
   text-transform: uppercase;
   display: none;
+}
+
+.hiddenList .item {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 #menu-icon {
@@ -268,12 +295,15 @@ html, body {
   background: url(../img/rotate.png) center no-repeat;
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
 }
 
 .menu-icon-transform{
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
 }
 
 #menu-icon:hover{
@@ -315,6 +345,7 @@ html, body {
   -webkit-flex: 1;
   flex: 1;
   -ms-flex: 1;
+  -moz-flex: 1;
 }
 
 .non-project-bottom-section{
@@ -336,4 +367,5 @@ html, body {
   -webkit-flex: 1;
   flex: 1;
   -ms-flex: 1;
+  -moz-flex: 1;
 }

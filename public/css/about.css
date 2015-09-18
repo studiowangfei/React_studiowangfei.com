@@ -1,9 +1,9 @@
 .about_title {
-   font-size: 24px;
-   font-weight: 500;
-   color: black;
-   padding-bottom: 36px;
-   text-align: left;
+ font-size: 24px;
+ font-weight: 500;
+ color: black;
+ padding-bottom: 36px;
+ text-align: left;
 }
 
 .about_container {
@@ -13,16 +13,18 @@
   justify-content: space-between;
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
   position: relative;
   height: auto;
 }
 
 .about_brief {
-	font-size: 18px;
-  color: #919191;
+	font-size: 16px;
+  color: #000;
   font-weight: 300;
   line-height: 32px;
   text-transform: none;
@@ -41,7 +43,7 @@
 
 .about_link, .about_link:visited{
   border-bottom: 4px solid #e3e3e3;
-  color: #919191;
+  color: #000;
 }
 
 .about_link:hover {

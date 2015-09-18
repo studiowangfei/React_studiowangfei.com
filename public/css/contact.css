@@ -12,24 +12,26 @@
   justify-content: space-between;
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
   position: relative;
   height: auto;
 }
 
 .contact_brief {
-	line-height:32px;
+	line-height:18px;
 	text-align:left;
-	font-size:18px;
+	font-size:14px;
 	font-weight:300;
-	color: #919191;
+	color: #000;
 }
 
 .contact_brief p{
   margin-bottom: 16px;
-  color: #919191;
+  color: #000;
 }
 
 .contact_img {
@@ -50,7 +52,7 @@
 .contact_brief a{
   font-weight: 400;
   border-bottom: 4px solid #e3e3e3;
-	color: #919191;
+	color: #000;
 }
 
 .contact_brief a:hover {

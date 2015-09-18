@@ -257,12 +257,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var taobao_poker_height = $('.taobao_poker').height();
-    if(scrollHeight>2760 && scrollHeight<3540+taobao_poker_height){
+    if(scrollHeight>2760 && scrollHeight<3340+taobao_poker_height){
       $('.taobao_trigger_1').fadeIn('slow');
     }else{
       $('.taobao_trigger_1').fadeOut('slow');
     };
-    if(scrollHeight>3540+taobao_poker_height && scrollHeight<4440+taobao_poker_height){
+    if(scrollHeight>3340+taobao_poker_height && scrollHeight<4440+taobao_poker_height){
       $('.taobao_trigger_2').fadeIn('slow');
     }else{
       $('.taobao_trigger_2').fadeOut('slow');

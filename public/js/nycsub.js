@@ -20,8 +20,15 @@ $(document).ready(function(){
   //flipper img append, using sprite
   for(var i=0;i<60;i++){
     $('.nycsub').append('<div class="nycsub_flipper" id="nycsub_flipper_'+i+'"><div class="nycsub_front"></div><div class="nycsub_back" id="nycsub_back_'+ i +'"></div></div>');
-    $('#nycsub_flipper_'+i+' .nycsub_front').css('background-image', 'url("../img/project/nycsub/riders/nycsub_sprite_front.png")').css('background-repeat','no-repeat').css('background-position', -140*i+'px 0px');
-    $('#nycsub_flipper_'+i+' .nycsub_back').css('background-image', 'url("../img/project/nycsub/riders/nycsub_sprite_back.png")').css('background-repeat','no-repeat').css('background-position', -140*i+'px 0px');
+    $('#nycsub_flipper_'+i+' .nycsub_front')
+    .css('background-image', 'url("../img/project/nycsub/riders/nycsub_sprite_front.png")')
+    .css('background-repeat','no-repeat')
+    .css('background-position', -140*i+'px 0px');
+
+    $('#nycsub_flipper_'+i+' .nycsub_back')
+    .css('background-image', 'url("../img/project/nycsub/riders/nycsub_sprite_back.png")')
+    .css('background-repeat','no-repeat')
+    .css('background-position', -140*i+'px 0px');
   }
 
   //subway line sort

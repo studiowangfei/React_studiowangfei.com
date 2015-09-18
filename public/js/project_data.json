@@ -25,7 +25,7 @@ var projectData = [
     {"website": " - SOM LLP.", "weblink": "http://www.som.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/bim_process"}],
   "story": "SOM BIM Data is a web-based dashboard for managing and collaborating on complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Different from traditional CMS, the project dashboard is focused on real-time data. It's envisioned and designed as a data-exchanging and tunneling platform for all players working on the same project.",
-  "scrollDown": " to see the design process, information architecture and mock-ups. All numbers here are faked due to NDA."
+  "scrollDown": " to see the design process, information architecture and mockups. All numbers here are faked due to NDA."
   },
   {
   "name": "LinkedIn Welcome-Back Portal",
@@ -39,7 +39,7 @@ var projectData = [
     {"website": " - LinkedIn", "weblink": "http://www.linkedin.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/linkedin_75dpi"}],
   "story": "LinkedIn is a network of over 380 million professionals. However, sometimes when members are happy in their current positions, they become dormant users and choose not to spend their time on LinkedIn. LinkedIn Welcome-Back Portal provides a fresh, simple and immersive landing experience for a dormant user who is returning after 3+ months. The portal page is designed to help dormant users skip the overwhelming information and re-engage with LinkedIn's functions quickly, accurately and effortlessly.",
-  "scrollDown": " to see the design process, high-fidelity mock-ups and prototype."
+  "scrollDown": " to see the design process, high-fidelity mockups and prototype."
   },
   {
   "name": "Zoom Video New Home-Landing",
@@ -52,7 +52,7 @@ var projectData = [
   "relatedLinks": [
     {"website": " - Zoom Video", "weblink": "http://www.zoom.us"}],
   "story": "Zoom unifies cloud video conferencing, instant online meetings, and group messaging into one simple and powerful platform. Serving millions of users on different platforms with different meeting requirements, Zoom's product lines and subscribed plans have expanded aggresively. The old Zoom home landing page was designed to accmodate its core product but failed to provide clear and quick accesses to the new products. The re-design of Zoom's home-landing is to explore a synthetic solution for its ever expanding product lines and plans.",
-  "scrollDown": " to see the design process and high-fidelity mock-ups."
+  "scrollDown": " to see the design process and high-fidelity mockups."
   },
   {
   "name": "New York City Sub Rider-Readers",
@@ -108,7 +108,7 @@ var projectData = [
     {"website": " - studiowangfei.com", "weblink": "http://www.studiowangfei.com"},
     {"website": " - dev code on GitHub", "weblink": "https://github.com/studiowangfei/React_studiowangfei.com"}],
   "story": "Studiowangfei.com is my personal website and showcases some design and research projects. I designed and built it from scratch with the concept of web-components. By tweaking the typologies of components, studiowangfei.com v1.0 was designed as a flexible framework that accomodates both standardization and customization. All project data is seperated as a JSON feed and hooked back with web-components. What you see here is the framework of the first release of this site, by now it probably has evolved.",
-  "scrollDown": " to see the design process and component wireframes and mock-ups."
+  "scrollDown": " to see the design process and component wireframes and mockups."
   },
   {
   "name": "Another Taobao Village 1",

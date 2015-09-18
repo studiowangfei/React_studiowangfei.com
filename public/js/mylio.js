@@ -29,8 +29,8 @@ $(document).ready(function(){
 
     }else{
       $('.mylio_userflow_image')
-      .css('width', '472px')
-      .css('height', '332px');
+      .css('width', '480px')
+      .css('height', '338px');
 
       $('.device_orientation img')
       .css('margin', '-128px 0 0 15%');

@@ -41,11 +41,13 @@ $(document).ready(function(){
       $('.writing_container')
       .css('margin', '0 auto 64px auto');
 
+      // to work for IE, don't use "initial", use "inline" instead
       $('.hidden_blog_list')
-      .css('display', 'initial');
+      .css('display', 'inline');
     }else{
       $('.blog_list')
-      .css('display', 'initial');
+      // to work for IE, don't use "initial", use "inline" instead
+      .css('display', 'inline');
 
       $('.writing_container')
       .css('margin', '0 0 64px 0');

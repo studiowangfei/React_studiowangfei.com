@@ -47,27 +47,27 @@ if (pageType == "projectEach"){
 var TopContainer = React.createClass({displayName: "TopContainer",
   render: function(){
     return (
-      React.createElement("div", null, 
+      React.createElement("div", null,
         React.createElement("div", {className: "top-placeholder"}
-        ), 
-        React.createElement("div", {className: "top-container"}, 
-          React.createElement("div", {className: "top-section"}, 
-            React.createElement("div", {className: "left"}, 
+        ),
+        React.createElement("div", {className: "top-container"},
+          React.createElement("div", {className: "top-section"},
+            React.createElement("div", {className: "left"},
               React.createElement("a", {id: "logo", href: "http://www.studiowangfei.com/"}, "Studiowangfei")
-            ), 
-            React.createElement("ul", {className: "right"}, 
-              React.createElement("li", null, React.createElement("a", {className: "item", id: projectPage, href: urlMap+"project.html"}, " Project")), 
-              React.createElement("li", null, React.createElement("a", {className: "item", id: aboutPage, href: urlMap+"about.html"}, " About")), 
-              React.createElement("li", null, React.createElement("a", {className: "item", id: blogPage, href: urlMap+"blog.html"}, " Blog")), 
+            ),
+            React.createElement("ul", {className: "right"},
+              React.createElement("li", null, React.createElement("a", {className: "item", id: projectPage, href: urlMap+"project.html"}, " Project")),
+              React.createElement("li", null, React.createElement("a", {className: "item", id: aboutPage, href: urlMap+"about.html"}, " About")),
+              React.createElement("li", null, React.createElement("a", {className: "item", id: blogPage, href: urlMap+"blog.html"}, " Blog")),
               React.createElement("li", null, React.createElement("a", {className: "item", id: contactPage, href: urlMap+"contact.html"}, " Contact"))
-            ), 
+            ),
             React.createElement("div", {id: "menu-icon"})
-          ), 
+          ),
 
-          React.createElement("ul", {className: "hiddenList"}, 
-            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"project.html"}, " Project")), 
-            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"about.html"}, " About")), 
-            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"blog.html"}, " Blog")), 
+          React.createElement("ul", {className: "hiddenList"},
+            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"project.html"}, " Project")),
+            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"about.html"}, " About")),
+            React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"blog.html"}, " Blog")),
             React.createElement("li", null, React.createElement("a", {className: "item", href: urlMap+"contact.html"}, " Contact"))
           )
 
@@ -110,18 +110,21 @@ $(document).ready(function(){
       .css('display', 'none');
 
       $('#logo')
-      .css('font-size', '14px');
+      .css('font-size', '14px')
+      //.css('color', '#b0b0b0');
 
     }else{
 
       $('#menu-icon')
-      .css('display', 'initial');
+      // to work for IE, don't use "initial", use "inline" instead
+      .css('display', 'inline');
 
       $('.top-section .right')
       .css('display', 'none');
 
       $('#logo')
-      .css('font-size', '18px');
+      .css('font-size', '18px')
+      .css('color', 'black');
     }
   }
 
