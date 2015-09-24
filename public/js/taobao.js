@@ -119,9 +119,9 @@ $(document).ready(function(){
   // poker sort move top when hover
   function move(x, y){
     return function(){
-      $('.movetop').css('transition', 'top 0s, left 0s');
+      $('.movetop').css('transition', 'top 0.2s, left 0.2s');
       var element = document.getElementById('taobao_poker_small_' + x);
-      var distance=element.offsetTop;
+      var distance = element.offsetTop;
       $('#taobao_poker_small_'+x).css('top', distance + y + 'px')
     }
   }
@@ -257,12 +257,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var taobao_poker_height = $('.taobao_poker').height();
-    if(scrollHeight>2760 && scrollHeight<3340+taobao_poker_height){
+    if(scrollHeight>2960 && scrollHeight<3540+taobao_poker_height){
       $('.taobao_trigger_1').fadeIn('slow');
     }else{
       $('.taobao_trigger_1').fadeOut('slow');
     };
-    if(scrollHeight>3340+taobao_poker_height && scrollHeight<4440+taobao_poker_height){
+    if(scrollHeight>3540+taobao_poker_height && scrollHeight<4640+taobao_poker_height){
       $('.taobao_trigger_2').fadeIn('slow');
     }else{
       $('.taobao_trigger_2').fadeOut('slow');

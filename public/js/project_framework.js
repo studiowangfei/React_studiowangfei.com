@@ -3,9 +3,10 @@
 ////////////////// project index setting
 var projectList = [
   "Mylio Pair",
-  "SOM BIM Data Dashboard",
-  "LinkedIn Welcome-Back Portal",
+  "Blooday",
+  "BIM Data Dashboard",
   "Zoom Video New Home-Landing",
+  "LinkedIn Welcome-Back Portal",
   "New York City Sub Rider-Readers",
   "Another Taobao Village 2",
   "San Francisco POPOS",
@@ -222,7 +223,7 @@ $(document).ready(function(){
       .css('text-align', 'left');
 
       $('.feature_descript')
-      .css('width', '75%');
+      .css('width', '85%');
 
     }else{
 
@@ -240,7 +241,7 @@ $(document).ready(function(){
       .css('margin', '0 auto 64px auto');
 
       $('.feature_descript')
-      .css('width', containerWidth*0.9 + 'px');
+      .css('width', containerWidth*0.85 + 'px');
     }
   }
 

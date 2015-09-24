@@ -14,7 +14,20 @@ var projectData = [
   "scrollDown": " to see the design process, user flow and prototype."
   },
   {
-  "name": "SOM BIM Data Dashboard",
+  "name": "Blooday",
+  "year": 2015,
+  "type": "Product",
+  "projectUrl": "blooday.html",
+  "imgNum": 3,
+  "imgUrl": "../img/project/blooday/",
+  "scrollDownValue": 700,
+  "relatedLinks": [
+    ],
+  "story": "Blooday modernizes the way you receive and view your blood test result. It's instant, accurate, comprehensive, and secured. No matter you log in for a quick conclusion or dive in for a full-detail explanation, Blooday delivers right information in right places at right time. It helps you track your blood test records, keeps you in touch with your doctor, and motivates you to improve your health. Blooday is here to keep you informed and healthy.",
+  "scrollDown": " to see the user research, design process and high-fidelity mockups."
+  },
+  {
+  "name": "BIM Data Dashboard",
   "year": 2014,
   "type": "application",
   "projectUrl": "sombim.html",
@@ -26,6 +39,19 @@ var projectData = [
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/bim_process"}],
   "story": "SOM BIM Data is a web-based dashboard for managing and collaborating on complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Different from traditional CMS, the project dashboard is focused on real-time data. It's envisioned and designed as a data-exchanging and tunneling platform for all players working on the same project.",
   "scrollDown": " to see the design process, information architecture and mockups. All numbers here are faked due to NDA."
+  },
+  {
+  "name": "Zoom Video New Home-Landing",
+  "year": 2015,
+  "type": "Product",
+  "projectUrl": "zoom.html",
+  "imgNum": 3,
+  "imgUrl": "../img/project/zoom/",
+  "scrollDownValue": 700,
+  "relatedLinks": [
+    {"website": " - Zoom Video", "weblink": "http://www.zoom.us"}],
+  "story": "Zoom unifies cloud video conferencing, instant online meetings, and group messaging into one simple and powerful platform. Serving millions of users on different platforms with different meeting requirements, Zoom's product lines and subscribed plans have expanded aggresively. The old Zoom home landing page was designed to accmodate its core product but failed to provide clear and quick accesses to the new products. The re-design of Zoom's home-landing is to explore a synthetic solution for its ever expanding product lines and plans.",
+  "scrollDown": " to see the design process and high-fidelity mockups."
   },
   {
   "name": "LinkedIn Welcome-Back Portal",
@@ -40,19 +66,6 @@ var projectData = [
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/linkedin_75dpi"}],
   "story": "LinkedIn is a network of over 380 million professionals. However, sometimes when members are happy in their current positions, they become dormant users and choose not to spend their time on LinkedIn. LinkedIn Welcome-Back Portal provides a fresh, simple and immersive landing experience for a dormant user who is returning after 3+ months. The portal page is designed to help dormant users skip the overwhelming information and re-engage with LinkedIn's functions quickly, accurately and effortlessly.",
   "scrollDown": " to see the design process, high-fidelity mockups and prototype."
-  },
-  {
-  "name": "Zoom Video New Home-Landing",
-  "year": 2015,
-  "type": "Product",
-  "projectUrl": "zoom.html",
-  "imgNum": 3,
-  "imgUrl": "../img/project/zoom/",
-  "scrollDownValue": 700,
-  "relatedLinks": [
-    {"website": " - Zoom Video", "weblink": "http://www.zoom.us"}],
-  "story": "Zoom unifies cloud video conferencing, instant online meetings, and group messaging into one simple and powerful platform. Serving millions of users on different platforms with different meeting requirements, Zoom's product lines and subscribed plans have expanded aggresively. The old Zoom home landing page was designed to accmodate its core product but failed to provide clear and quick accesses to the new products. The re-design of Zoom's home-landing is to explore a synthetic solution for its ever expanding product lines and plans.",
-  "scrollDown": " to see the design process and high-fidelity mockups."
   },
   {
   "name": "New York City Sub Rider-Readers",

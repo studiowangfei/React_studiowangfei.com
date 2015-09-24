@@ -54,7 +54,7 @@
 }
 
 .feature_descript {
-  width: 75%;
+  width: 100%;
   color: black;
   text-align: center;
   margin: 16px auto 48px auto;
@@ -316,8 +316,8 @@
   top:0;
   left:0;
   z-index: 2;
-  transition: top 0.2s, left 0.2s, transform 0.5s;
-  -webkit-transition: top 0.2s, left 0.2s, -webkit-transform 0.5s;
+  transition: top 0.5s, left 0.5s, transform 0.5s;
+  -webkit-transition: top 0.5s, left 0.5s, -webkit-transform 0.5s;
   -ms-transition: top 0.2s, left 0.2s, -ms-transform 0.5s;
   -moz-transition: top 0.2s, left 0.2s, -moz-transform 0.5s;
 }
