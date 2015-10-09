@@ -1,9 +1,9 @@
 .about_title {
- font-size: 24px;
- font-weight: 500;
- color: black;
- padding-bottom: 36px;
- text-align: left;
+  font-size: 48px;
+  font-weight: 300;
+  color: black;
+  padding-bottom: 36px;
+  text-align: left;
 }
 
 .about_container {

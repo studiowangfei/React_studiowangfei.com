@@ -2,11 +2,11 @@ var projectData = [
   {
   "name": "Mylio Pair",
   "year": 2015,
-  "type": "application",
+  "type": "design project",
   "projectUrl": "mylio.html",
   "imgNum": 4,
   "imgUrl": "../img/project/mylio/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 710,
   "relatedLinks": [
     {"website": " - Mylio", "weblink": "http://www.mylio.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/mylio_process"}],
@@ -16,11 +16,11 @@ var projectData = [
   {
   "name": "Blooday",
   "year": 2015,
-  "type": "Product",
+  "type": "design challenge",
   "projectUrl": "blooday.html",
   "imgNum": 3,
   "imgUrl": "../img/project/blooday/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 710,
   "relatedLinks": [
     ],
   "story": "Blooday modernizes the way you receive and view your blood test result. It's instant, accurate, comprehensive, and secured. No matter you log in for a quick conclusion or dive in for a full-detail explanation, Blooday delivers right information in right places at right time. It helps you track your blood test records, keeps you in touch with your doctor, and motivates you to improve your health. Blooday is here to keep you informed and healthy.",
@@ -29,38 +29,38 @@ var projectData = [
   {
   "name": "BIM Data Dashboard",
   "year": 2014,
-  "type": "application",
+  "type": "design project",
   "projectUrl": "sombim.html",
   "imgNum": 3,
   "imgUrl": "../img/project/sombim/",
-  "scrollDownValue": 720,
+  "scrollDownValue": 770,
   "relatedLinks": [
     {"website": " - SOM LLP.", "weblink": "http://www.som.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/bim_process"}],
-  "story": "SOM BIM Data is a web-based dashboard for managing and collaborating on complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building information model). Different from traditional CMS, the project dashboard is focused on real-time data. It's envisioned and designed as a data-exchanging and tunneling platform for all players working on the same project.",
+  "story": "SOM BIM Data is a web-based dashboard for managing and collaborating on complex and large-scale building projects. It helps designers, engineers, and project managers to track, sync and analyze the data such as builing footprint, energy saving and consumption and construction cost from BIM (Building Information Model). Different from traditional CMS, the project dashboard is focused on real-time data. It's envisioned and designed as a data-exchanging and tunneling platform for all players working on the same project.",
   "scrollDown": " to see the design process, information architecture and mockups. All numbers here are faked due to NDA."
   },
   {
-  "name": "Zoom Video New Home-Landing",
+  "name": "Zoom New Home-Landing",
   "year": 2015,
-  "type": "Product",
+  "type": "design project",
   "projectUrl": "zoom.html",
   "imgNum": 3,
   "imgUrl": "../img/project/zoom/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 730,
   "relatedLinks": [
-    {"website": " - Zoom Video", "weblink": "http://www.zoom.us"}],
-  "story": "Zoom unifies cloud video conferencing, instant online meetings, and group messaging into one simple and powerful platform. Serving millions of users on different platforms with different meeting requirements, Zoom's product lines and subscribed plans have expanded aggresively. The old Zoom home landing page was designed to accmodate its core product but failed to provide clear and quick accesses to the new products. The re-design of Zoom's home-landing is to explore a synthetic solution for its ever expanding product lines and plans.",
+    {"website": " - Zoom Communications", "weblink": "http://www.zoom.us"}],
+  "story": "Zoom unifies cloud video conferencing, instant online meetings, and group messaging into one simple and powerful platform. Serving millions of users on different platforms with different meeting requirements, Zoom's product lines and subscribed plans have expanded aggresively. The old Zoom home landing page was designed to accmodate its core product but failed to provide exposure and access to the new products. The re-design of Zoom's home-landing is to explore a synthetic solution for its ever expanding product lines and plans.",
   "scrollDown": " to see the design process and high-fidelity mockups."
   },
   {
   "name": "LinkedIn Welcome-Back Portal",
   "year": 2015,
-  "type": "Product",
+  "type": "design challenge",
   "projectUrl": "linkedin.html",
   "imgNum": 3,
   "imgUrl": "../img/project/linkedin/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 750,
   "relatedLinks": [
     {"website": " - LinkedIn", "weblink": "http://www.linkedin.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/linkedin_75dpi"}],
@@ -68,13 +68,13 @@ var projectData = [
   "scrollDown": " to see the design process, high-fidelity mockups and prototype."
   },
   {
-  "name": "New York City Sub Rider-Readers",
+  "name": "NYC Sub Rider-Readers",
   "year": 2013,
-  "type": "Data",
+  "type": "design project",
   "projectUrl": "nycsub.html",
   "imgNum": 4,
   "imgUrl": "../img/project/nycsub/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 730,
   "relatedLinks": [
     {"website": " - MTA New York City", "weblink": "http://web.mta.info/nyct/facts/ridership/"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/nyc_readingscape"}
@@ -85,11 +85,11 @@ var projectData = [
   {
   "name": "Another Taobao Village 2",
   "year": 2015,
-  "type": "Data",
+  "type": "design project",
   "projectUrl": "taobao_2.html",
   "imgNum": 3,
   "imgUrl": "../img/project/taobao_2/",
-  "scrollDownValue": 720,
+  "scrollDownValue": 770,
   "relatedLinks": [
     {"website": " - Taobao.com", "weblink": "http://www.taobao.com"},
     {"website": " - Design Process", "weblink": "http://issuu.com/studiowangfei/docs/taobao_village"}],
@@ -99,11 +99,11 @@ var projectData = [
   {
   "name": "San Francisco POPOS",
   "year": 2015,
-  "type": "Data",
+  "type": "design project",
   "projectUrl": "sfpopos.html",
   "imgNum": 4,
   "imgUrl": "../img/project/sfpopos/",
-  "scrollDownValue": 720,
+  "scrollDownValue": 770,
   "relatedLinks": [
     {"website": " - ESRL", "weblink": "http://www.esrl.noaa.gov/gmd/grad/solcalc/azel"}],
   "story": "POPOS stands for Privately Owned Public Open Space. San Francisco City currently owns over 70 POPOS and people usually go to them to enjoy their lunch. Other than its environmental design, another important parameter that decides a POPO's popularity is its sunlight condition during 11:00 to 14:00 every weekday. This project designs a data visualization that maps out all San Francisco POPOS' locations and their shadow conditions at 11:00, 12:00, 13:00 and 14:00. People can use this map to choose the POPO they want to visit based on its location, rating, sunshine/shadow and quality etc. This project is currently under development with OpenStreetMap API.",
@@ -112,11 +112,11 @@ var projectData = [
   {
   "name": "Studiowangfei.com v1.0",
   "year": 2015,
-  "type": "website framework",
+  "type": "design project",
   "projectUrl": "webframe.html",
   "imgNum": 3,
   "imgUrl": "../img/project/webframe/",
-  "scrollDownValue": 700,
+  "scrollDownValue": 730,
   "relatedLinks": [
     {"website": " - studiowangfei.com", "weblink": "http://www.studiowangfei.com"},
     {"website": " - dev code on GitHub", "weblink": "https://github.com/studiowangfei/React_studiowangfei.com"}],
@@ -126,11 +126,11 @@ var projectData = [
   {
   "name": "Another Taobao Village 1",
   "year": 2014,
-  "type": "Data",
+  "type": "design project",
   "projectUrl": "taobao.html",
   "imgNum": 3,
   "imgUrl": "../img/project/taobao/",
-  "scrollDownValue": 740,
+  "scrollDownValue": 790,
   "relatedLinks": [
     {"website": " - Alibaba AliResearch", "weblink": "http://www.aliresearch.com"},
     {"website": " - Taobao.com", "weblink": "http://www.taobao.com"}],
@@ -140,7 +140,7 @@ var projectData = [
   {
   "name": "Inside x Insight",
   "year": 2014,
-  "type": "Data",
+  "type": "product",
   "projectUrl": "inin.html",
   "imgNum": 6,
   "imgUrl": "../img/project/inin/",
@@ -155,11 +155,11 @@ var projectData = [
   {
   "name": "W@RK",
   "year": 2013,
-  "type": "Strategy",
+  "type": "design research",
   "projectUrl": "work.html",
   "imgNum": 16,
   "imgUrl": "../img/project/work/",
-  "scrollDownValue": 640,
+  "scrollDownValue": 710,
   "relatedLinks": [
     {"website": " - IDEAS CITY", "weblink": "http://www.newmuseum.org/ideascity/about"}],
   "story": "W@RK is a design and business proposal rethinking working environment in the context of freelancing. It takes New York City - which has over 40,000 freelancers - as a testing site to conduct mapping research, street interviews, spatial documentation and design experiments. W@RK proposes a new comprehensive co-working model that intergrates sharing economy, dynamic pricing, spatial customization and social networking. Its ambition is simple and bold: Can a freelancer have an instant and productive co-working envrionment at a price of avg. $1/hour in New York City? W@RK was created by Fei Wang and Linsay May, with the support of Princeton University and the New Museum in New York. The project has been exhibited at the Bowery City Fest in 2013.",
@@ -168,11 +168,11 @@ var projectData = [
   {
   "name": "Another Leap",
   "year": 2014,
-  "type": "Exhibition",
+  "type": "design project",
   "projectUrl": "anotherleap.html",
   "imgNum": 11,
   "imgUrl": "../img/project/anotherleap/",
-  "scrollDownValue": 2050,
+  "scrollDownValue": 2150,
   "relatedLinks": [
     {"website": " - Power Station of Art", "weblink": "http://powerstationofart.com/"},
     {"website": " - Princeton SoA", "weblink": "https://soa.princeton.edu/#830"},
@@ -183,11 +183,11 @@ var projectData = [
   {
   "name": "Urban v.s. Rural of China 1979- ",
   "year": 2012,
-  "type": "Data",
+  "type": "design research",
   "projectUrl": "urbanrural.html",
   "imgNum": 3,
   "imgUrl": "../img/project/urbanrural/",
-  "scrollDownValue": 600,
+  "scrollDownValue": 730,
   "relatedLinks": [
     {"website": " - National Bureau of Statistics of PRC", "weblink": "http://www.stats.gov.cn/english/"}
   ],
@@ -197,11 +197,11 @@ var projectData = [
   {
   "name": "Instant Impressionism",
   "year": 2010,
-  "type": "Urbanism",
+  "type": "design project",
   "projectUrl": "impressionism.html",
   "imgNum": 10,
   "imgUrl": "../img/project/impressionism/",
-  "scrollDownValue": 680,
+  "scrollDownValue": 750,
   "relatedLinks": [
     {"website": " - VELUX", "weblink": "http://iva.velux.com/about_the_award/previous_awards/award_2010/winners_2010/hm4"}
   ],
@@ -211,7 +211,7 @@ var projectData = [
   {
   "name": "Holistic Realm",
   "year": 2010,
-  "type": "Urbanism",
+  "type": "design project",
   "projectUrl": "holistic.html",
   "imgNum": 11,
   "imgUrl": "../img/project/holistic/",
@@ -223,7 +223,7 @@ var projectData = [
   {
   "name": "Draw It",
   "year": 2012,
-  "type": "Data",
+  "type": "design drawing",
   "projectUrl": "drawit.html",
   "imgNum": 9,
   "imgUrl": "../img/project/drawit/",
@@ -235,7 +235,7 @@ var projectData = [
   {
   "name": "Closer",
   "year": 2012,
-  "type": "Photography",
+  "type": "photography",
   "projectUrl": "closer.html",
   "imgNum": 24,
   "imgUrl": "../img/project/closer/",

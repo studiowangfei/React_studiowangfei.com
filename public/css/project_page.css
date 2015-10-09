@@ -1,13 +1,40 @@
+#protect-container{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 2000px;
+  background-color: white;
+  text-align: center;
+  padding-top: 144px;
+  opacity: 0.98;
+}
+
+#protect-label{
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+}
+
+#getUserInput{
+  width: 160px;
+  margin-right: 8px;
+}
+
+#protect-button:hover{
+  cursor: pointer;
+}
+
 .project_name {
   display: none;
 }
 
 .project_title {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 300;
   color: black;
 	padding-bottom: 36px;
   text-align: left;
+  //text-transform: uppercase;
 }
 
 .project_container {
@@ -32,7 +59,7 @@
   font-size: 15px;
   color: black;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 24px;
   text-transform: none;
 }
 
@@ -265,6 +292,7 @@
 
 /* taobao */
 #taobao_context_title{
+  font-weight: 500;
   display: -webkit-flex;
   display: flex;
   display: -ms-flex;
@@ -272,15 +300,15 @@
   justify-content: space-between;
   -ms-justify-content: space-between;
   -moz-justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 #taobao_context_title1{
-  margin-left: 32px;
+  margin-left: 80px;
 }
 
 #taobao_context_title2{
-  margin-right: 16px;
+  margin-right: 60px;
 }
 
 .taobao_feature_regular img{
@@ -316,10 +344,10 @@
   top:0;
   left:0;
   z-index: 2;
-  transition: top 0.5s, left 0.5s, transform 0.5s;
-  -webkit-transition: top 0.5s, left 0.5s, -webkit-transform 0.5s;
-  -ms-transition: top 0.2s, left 0.2s, -ms-transform 0.5s;
-  -moz-transition: top 0.2s, left 0.2s, -moz-transform 0.5s;
+  transition: top 0.1s, left 0.1s, transform 0.1s;
+  -webkit-transition: top 0.1s, left 0.1s, -webkit-transform 0.1s;
+  -ms-transition: top 0.1s, left 0.1s, -ms-transform 0.1s;
+  -moz-transition: top 0.1s, left 0.1s, -moz-transform 0.1s;
 }
 
 .movetop:hover {
@@ -991,7 +1019,8 @@
   margin-bottom: 160px;
 }
 
-/* only for IE */
+/* workaround for IE, not supporting other browsers
+
 .nycsub_flipper:hover .nycsub_back{
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
@@ -1001,7 +1030,8 @@
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* only for IE ends */
+
+only for IE ends */
 
 .nycsub img{
 }
@@ -1010,14 +1040,14 @@
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(-180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .nycsub_flipper:hover{
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(-180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .nycsub_front, .nycsub_back {
@@ -1079,7 +1109,7 @@
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(-180deg);
+  -ms-transform: rotateY(180deg);
 }
 
 .nycsub_slide_container {
@@ -1493,7 +1523,7 @@
 }
 
 .mylio_options div{
-  margin-bottom: 64px;
+  margin-bottom: 96px;
   display: -webkit-flex;
   display: flex;
   display: -ms-flex;

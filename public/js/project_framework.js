@@ -47,6 +47,29 @@ var previousProject = function(){
   }
 }
 
+// crypt certain projects
+// test if a project has '#protect-container'
+if ($('#protect-container').length){
+  console.log('hw');
+  $('html').css('overflow', 'hidden');
+}else{
+  $('html').css('overflow', 'auto');
+}
+
+
+var userInput;
+$('#protect-form').submit(function(){
+  userInput = document.getElementById('getUserInput').value.toLowerCase();
+  if (userInput == 'fei@studiowangfei.com'){
+    $('#protect-container')
+    .css('z-index', '0')
+    .empty();
+    $('html').css('overflow', 'auto');
+  }
+
+  return false;
+});
+
 ///////////// React.js components
 // component structure
 /* -TopContainer

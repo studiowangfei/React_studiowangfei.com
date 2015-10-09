@@ -10,7 +10,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     var nycsub_flipper_height = $('.nycsub').height();
-    if(scrollHeight>4320 && scrollHeight<4180+nycsub_flipper_height){
+    if(scrollHeight>4640 && scrollHeight<4500+nycsub_flipper_height){
       $('.nycsub_lines').fadeIn('slow');
     }else{
       $('.nycsub_lines').fadeOut('slow');
@@ -400,7 +400,7 @@ var styles = [{"featureType":"water","elementType":"geometry.fill","stylers":[{"
       ;
       infowindow = new google.maps.InfoWindow({
         content: string,
-        disableAutoPan: true
+        disableAutoPan: false
       });
       infowindow.open(map, x);
     }
