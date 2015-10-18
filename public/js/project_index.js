@@ -17,11 +17,11 @@ $(document).ready(function(){
     }else if(i===4){
       projectUrl="project/linkedin.html"
     }else if(i===5){
-      projectUrl="project/nycsub.html"
-    }else if(i===6){
-      projectUrl="project/taobao_2.html"
-    }else if(i===7){
       projectUrl="project/sfpopos.html"
+    }else if(i===6){
+      projectUrl="project/nycsub.html"
+    }else if(i===7){
+      projectUrl="project/taobao_2.html"
     }else if(i===8){
       projectUrl="project/webframe.html"
     }else if(i===9){
@@ -48,12 +48,12 @@ $(document).ready(function(){
       +'<a href='+projectUrl+'><div class="front"></div></a><div class="back"></div></div>');
 
     $('#flipper_'+i+' .front')
-    .css('background-image', 'url("img/project/project_icon/project_sprite_front.png")')
+    .css('background-image', 'url("img/project/project_icon/project_sprite_front.jpg")')
     .css('background-repeat','no-repeat')
     .css('background-position', -220*i+'px 0px');
 
     $('#flipper_'+i+' .back')
-    .css('background-image', 'url("img/project/project_icon/project_sprite_back.png")')
+    .css('background-image', 'url("img/project/project_icon/project_sprite_back.jpg")')
     .css('background-repeat','no-repeat')
     .css('background-position', -220*i+'px 0px');
   };

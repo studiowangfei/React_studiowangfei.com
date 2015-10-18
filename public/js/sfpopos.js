@@ -57,7 +57,7 @@ $(document).ready(function(){
   loopShow();
 
   //map fullscreen and exit
-  $('#map_fullscreen').click(function(){
+  $('#sfpopos_map_fullscreen').click(function(){
     scrollHeight = $(window).scrollTop();
     $('#map_close').css('display','initial');
     $('body, html').css('overflow', 'hidden');
@@ -93,7 +93,7 @@ function initialize(){
   // to the map type control.
 
   var mapOptions = {
-    zoom: 17,
+    zoom: 12,
     center: new google.maps.LatLng(37.791117, -122.399004),
     disableDefaultUI: false,
     streetViewControl: false,
@@ -183,7 +183,7 @@ function initialize(){
   }
 
   //transit layer automatic overlay
-  //var transitLayer = new google.maps.TransitLayer();
+  var transitLayer = new google.maps.TransitLayer();
   //transitLayer.setMap(map);
   //var trafficLayer = new google.maps.TrafficLayer();
   //trafficLayer.setMap(map);
