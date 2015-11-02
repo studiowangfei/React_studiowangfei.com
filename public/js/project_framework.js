@@ -380,4 +380,9 @@ $(document).ready(function(){
     $('.project_slide_container').hide();
   });
 
+  // set white background for project pages
+  $('body')
+  .css('background-image', 'none')
+  .css('background-color', '#fff');
+
 });

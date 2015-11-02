@@ -1,3 +1,22 @@
+.transfer-container{
+  margin: 128px auto 256px;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 300;
+  text-align: center;
+  color: #959595;
+}
+
+#project_request{
+  color: black;
+  border-bottom: 4px solid #e3e3e3;
+  //text-transform: uppercase;
+}
+
+#project_request:hover{
+  border-bottom: 4px solid #000;
+}
+
 .icon_container {
   display: flex;
   display: -webkit-flex;

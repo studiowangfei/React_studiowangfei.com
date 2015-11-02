@@ -23,7 +23,7 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   text-align:left;
-  font-weight:300;
+  font-weight:500;
   color:#515151;
 }
 
@@ -87,6 +87,7 @@
 }
 
 .writing_container {
+  background-color: white;
   margin: 0 0 64px 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;

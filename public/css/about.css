@@ -1,7 +1,7 @@
 .about_title {
   font-size: 48px;
   font-weight: 300;
-  color: black;
+  color: #000;
   padding-bottom: 36px;
   text-align: left;
 }
@@ -25,7 +25,7 @@
 .about_brief {
 	font-size: 16px;
   color: #000;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   text-transform: none;
 }
