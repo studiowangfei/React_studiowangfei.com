@@ -5,8 +5,8 @@ A customizable project framework built with web-component, handling both standar
 All data is JSON-based and linked with components.
 
 - Component Type:
-  - StandardComponent (header, footer, project title, brief, image, etc.)
-  - CustomizableComponent (slideshow, blog, map, video, etc.)
+  - Standard Component (header, footer, project title, brief, image, etc.)
+  - Customizable Component (gameset, slideshow, blog, map, video, etc.)
 
 
 - Component Structure:
