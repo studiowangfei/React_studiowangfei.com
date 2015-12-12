@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
   // hide all articles except the newest one
-  for(var i=1;i<5;i++){
+  for(var i=1;i<6;i++){
     $('.writing_'+i).hide();
   }
 
   // switch articles and reset scroll
   function clickSwitch(x){
     return function(){
-      for(var i=0;i<5;i++){
+      for(var i=0;i<6;i++){
         $('.writing_'+i).hide();
       }
       $('.writing_'+x).fadeIn('slow');
@@ -26,7 +26,7 @@ $(document).ready(function(){
     }
   }
 
-  for (var i=0; i<5; i++){
+  for (var i=0; i<6; i++){
     $('#writing_list_'+i).click(clickSwitch(i));
     $('#hidden_writing_list_'+i).click(clickSwitch(i));
   }
