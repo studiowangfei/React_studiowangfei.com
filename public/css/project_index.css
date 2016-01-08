@@ -1,6 +1,6 @@
 .transfer-container{
   margin: 128px auto 256px;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 48px;
   font-weight: 300;
   text-align: center;
@@ -8,8 +8,8 @@
 }
 
 #project_request{
-  color: #009900;
-  font-weight: 400;
+  color: #000;
+  font-weight: 300;
   border-bottom: 4px solid #e3e3e3;
   //text-transform: lowercase;
 }
