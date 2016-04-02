@@ -57,14 +57,18 @@
 
 .contact_brief a:hover {
   color: black;
-  border-bottom-color: black;
+  border-bottom-color: #009900;
 }
 
-#qrCode:hover{
+.contact_option:hover{
   cursor: pointer;
 }
 
-#qrCode_img{
-  display: none;
+.switch_img{
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
+#switch_img_0{
+  opacity: 1;
+}

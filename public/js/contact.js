@@ -3,10 +3,18 @@ $(document).ready(function(){
   // no feature, add margin
   $('.bottom-section').css('margin-top', '224px');
 
-  $('#qrCode').click(function(){
-    $('#qrCode_img').fadeToggle('slow');
-    $('#sfphoto').toggleClass('makeTransparent');
-  });
+  for(var i=0; i<4; i++){
+    $('#contact_option_'+i).click(imgSwitch(i));
+  }
+
+  function imgSwitch(x){
+    return function(){
+      for(var i=0; i<4; i++){
+        $('#switch_img_'+i).css('opacity', '0');
+      }
+      $('#switch_img_'+x).css('opacity', '1');
+    }
+  }
 
   // image and brief text change layout according to window width
   function contactImageLayout(){
