@@ -24,7 +24,20 @@
   -ms-box-sizing: border-box;
   text-align:left;
   font-weight:500;
-  color:#515151;
+}
+
+.writing_list{
+  cursor: pointer;
+  font-weight: 400;
+  color: #919191;
+}
+
+.writing_list:hover{
+  color: black;
+}
+
+#writing_list_0{
+  color: #000;
 }
 
 .blog_menu_icon {
@@ -112,14 +125,4 @@
   font-size: 23px;
   margin: 32px 0 48px 0;
   font-weight: 400;
-}
-
-.writing_list{
-  cursor: pointer;
-  font-weight: 400;
-  color: #919191;
-}
-
-.writing_list:hover{
-  color: black;
 }

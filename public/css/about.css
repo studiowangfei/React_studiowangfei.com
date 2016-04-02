@@ -1,6 +1,6 @@
 .about_title {
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 200;
   color: #000;
   padding-bottom: 36px;
   text-align: left;
@@ -47,7 +47,7 @@
 }
 
 .about_link:hover {
-  border-bottom-color: black;
+  border-bottom-color: #009900;
   cursor: pointer;
   color: black;
 }
