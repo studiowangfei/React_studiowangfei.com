@@ -10,8 +10,9 @@ $(document).ready(function(){
     return function(){
       for(var i=0;i<6;i++){
         $('.writing_'+i).hide();
-        $('#writing_list_'+i).css('color', '#919191');
+        $('#writing_list_'+i).css('color', '#bbb')
       }
+
       $('#writing_list_'+x).css('color', '#000');
       $('.writing_'+x).fadeIn('slow');
       $('.writing_container').scrollTop(0);

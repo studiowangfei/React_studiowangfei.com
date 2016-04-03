@@ -29,11 +29,7 @@
 .writing_list{
   cursor: pointer;
   font-weight: 400;
-  color: #919191;
-}
-
-.writing_list:hover{
-  color: black;
+  color: #bbb;
 }
 
 #writing_list_0{
