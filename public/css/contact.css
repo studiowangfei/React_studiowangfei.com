@@ -31,7 +31,7 @@
 
 .contact_brief p{
   margin-bottom: 16px;
-  color: #000;
+  color: #bbb;
 }
 
 .contact_img {
@@ -51,12 +51,12 @@
 
 .contact_brief a{
   font-weight: 500;
-  border-bottom: 4px solid #e3e3e3;
+  //border-bottom: 4px solid #e3e3e3;
 	color: #000;
 }
 
 .contact_brief a:hover {
-  color: black;
+  color: red;
   border-bottom-color: #009900;
 }
 

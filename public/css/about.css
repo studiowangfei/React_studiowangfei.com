@@ -24,9 +24,9 @@
 
 .about_brief {
 	font-size: 16px;
-  color: #000;
+  color: #bbb;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 28px;
   text-transform: none;
 }
 
@@ -42,14 +42,14 @@
 }
 
 .about_link, .about_link:visited{
-  border-bottom: 6px solid #e3e3e3;
+  //border-bottom: 6px solid #e3e3e3;
   color: #000;
 }
 
 .about_link:hover {
-  border-bottom-color: #009900;
+  //border-bottom-color: #009900;
   cursor: pointer;
-  color: black;
+  color: red;
 }
 
 .non-project-bottom-section {
