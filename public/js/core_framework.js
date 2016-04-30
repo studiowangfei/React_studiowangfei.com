@@ -93,7 +93,7 @@ $(document).ready(function(){
   // header responsive to window width
   function headerResponsive(){
     var containerWidth = $(window).width();
-    if (containerWidth > 912){
+    if (containerWidth > 720){
       $('.top-container')
       .css('height', '64px');
 
