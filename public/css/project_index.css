@@ -2,14 +2,14 @@
   margin: 128px auto 256px;
   font-size: 16px;
   line-height: 48px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   color: #bbb;
 }
 
 #project_request{
   color: #000;
-  font-weight: 300;
+  font-weight: 400;
   //border-bottom: 6px solid #e3e3e3;
   //text-transform: lowercase;
 }
