@@ -9,29 +9,3 @@ All data is JSON-based and linked with components.
   - Customizable Component (gameset, slideshow, blog, map, video, etc.)
 
 
-- Component Structure:
-
-  - Section Page (home, project, about, blog, contact, etc.)
-    - HeaderContainer
-    - MainContainer
-      - TileContainer
-      - TitleContainer
-      - BreifContainer
-      - ImageContainer
-      - BlogContainer
-    - FooterContainer
-
-  - Project Page (each project)
-    - HeaderContainer
-    - ProjectContainer
-      - TitleContainer
-      - BreifContainer
-      - ImageContainer
-      - WeblinkContainer
-    - FeatureContainer
-      - MapContainer (optional)
-      - VideoContainer (optional)
-      - GraphContainer (optional)
-      - AppContainer (optional)
-    - FooterContainer
-
