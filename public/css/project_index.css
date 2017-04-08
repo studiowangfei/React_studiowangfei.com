@@ -1,10 +1,10 @@
 .transfer-container{
   margin: 128px auto 256px;
-  font-size: 16px;
+  font-size: 32px;
   line-height: 48px;
   font-weight: 400;
   text-align: center;
-  color: #bbb;
+  color: #ddd;
 }
 
 #project_request{
@@ -49,10 +49,10 @@
 }
 
 .front{
-  transition: all 0.75s;
-  -webkit-transition: all 0.75s;
-  -moz-transition: all 0.75s;
-  -ms-transition: all 0.75s;
+  transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }

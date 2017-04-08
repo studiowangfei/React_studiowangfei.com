@@ -268,9 +268,9 @@ $(document).ready(function(){
 var map;
 function initialize() {
 
-// Create an array of styles.
-var styles = [{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#515151"},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"weight":0.1},{"lightness":-100}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"hue":"#000000"},{"lightness":50}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]}
-];
+  // Create an array of styles.
+  var styles = [{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#515151"},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"weight":0.1},{"lightness":-100}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"hue":"#000000"},{"lightness":50}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]}
+  ];
 
   // Create a new StyledMapType object, passing it the array of styles,
   // as well as the name to be displayed on the map type control.
@@ -418,7 +418,7 @@ var styles = [{"featureType":"water","elementType":"geometry.fill","stylers":[{"
   }
 
 
-  //Associate the styled map with the MapTypeId and set it to display.
+  //associate the styled map with the MapTypeId and set it to display
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 
